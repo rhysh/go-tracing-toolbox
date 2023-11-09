@@ -1,0 +1,26 @@
+1317023852 GoStart p=2 g=67059296 off=64323 g=67059296 seq=0 (from 1317006060 GoCreate p=2 g=130809 off=64307 g=67059296 stack=33)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317024726 GCMarkAssistStart p=2 g=67059296 off=64330
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40cfe6 runtime.convTstring runtime/iface.go:392
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317526354 GCMarkAssistDone p=2 g=67059296 off=64334
+1317557714 GoCreate p=2 g=67059296 off=64338 g=67059297 stack=33 (to 1317564498 GoStart p=2 g=67059297 off=64354 g=67059297 seq=0)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317560956 GoBlockSync p=2 g=67059296 off=64349 (to 1348945746 GoUnblock p=2 g=67059297 off=303146 g=67059296 seq=0)
+  4764f1 sync.(*WaitGroup).Wait sync/waitgroup.go:136
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348951293 GoStart p=2 g=67059296 off=303157 g=67059296 seq=0 (from 1348945746 GoUnblock p=2 g=67059297 off=303146 g=67059296 seq=0)
+1348969021 GoEnd p=2 g=67059296 off=303163

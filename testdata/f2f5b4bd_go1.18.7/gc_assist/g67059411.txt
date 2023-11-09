@@ -1,0 +1,6 @@
+1330824071 GoStart p=2 g=67059411 off=302775 g=67059411 seq=0 (from 1330805106 GoCreate p=2 g=67059294 off=302759 g=67059411 stack=65)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1330825287 GoUnblock p=2 g=67059411 off=302782 g=67059294 seq=0 (from 1330815965 GoBlockSelect p=2 g=67059294 off=302770, to 1330828743 GoStart p=2 g=67059294 off=302792 g=67059294 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1330828231 GoEnd p=2 g=67059411 off=302789

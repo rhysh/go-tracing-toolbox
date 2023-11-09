@@ -1,0 +1,1780 @@
+12117 GoWaiting p=1 g=85 off=270638 g=85 (to 3120847 GoUnblock p=2 g=63519986 off=618 g=85 seq=2)
+3190563 GoStart p=0 g=85 off=258526 g=85 seq=3 (from 3120847 GoUnblock p=2 g=63519986 off=618 g=85 seq=2)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+3194979 GoBlockSelect p=0 g=85 off=258531 (to 8290934 GoUnblock p=1 g=131527 off=277727 g=85 seq=4)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+8345163 GoStart p=0 g=85 off=258625 g=85 seq=5 (from 8290934 GoUnblock p=1 g=131527 off=277727 g=85 seq=4)
+8347041 GoUnblock p=0 g=85 off=258630 g=184 seq=2 (from 28159 GoWaiting p=1 g=184 off=271484 g=184, to 8354699 GoStart p=0 g=184 off=258641 g=184 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+8353291 GoBlockSelect p=0 g=85 off=258637 (to 12690704 GoUnblock p=0 g=131600 off=259136 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+12759802 GoStart p=2 g=85 off=1342 g=85 seq=7 (from 12690704 GoUnblock p=0 g=131600 off=259136 g=85 seq=0)
+12764196 GoUnblock p=2 g=85 off=1347 g=139 seq=2 (from 19349 GoWaiting p=1 g=139 off=270976 g=139, to 12774714 GoStart p=2 g=139 off=1367 g=139 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+12770319 HeapAlloc p=2 g=85 off=1355 mem=13210425456
+12773263 GoBlockSelect p=2 g=85 off=1363 (to 45214748 GoUnblock p=1 g=132904 off=279894 g=85 seq=8)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+45275462 GoStart p=1 g=85 off=279952 g=85 seq=0 (from 45214748 GoUnblock p=1 g=132904 off=279894 g=85 seq=8)
+45278577 GoBlockSelect p=1 g=85 off=279956 (to 63226792 GoUnblock p=1 g=0 off=281428 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+63231613 GoStart p=1 g=85 off=281433 g=85 seq=0 (from 63226792 GoUnblock p=1 g=0 off=281428 g=85 seq=0)
+63232936 GoUnblock p=1 g=85 off=281437 g=202 seq=0 (from 30975 GoWaiting p=1 g=202 off=271682 g=202, to 63241853 GoStart p=1 g=202 off=281447 g=202 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+63236754 GoBlockSelect p=1 g=85 off=281442 (to 69010549 GoUnblock p=3 g=48922306 off=68981 g=85 seq=12)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+69045514 GoStart p=1 g=85 off=281954 g=85 seq=13 (from 69010549 GoUnblock p=3 g=48922306 off=68981 g=85 seq=12)
+69049503 GoBlockSelect p=1 g=85 off=281959 (to 72042970 GoUnblock p=6 g=130083 off=414816 g=85 seq=14)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+72132783 GoStart p=3 g=85 off=69065 g=85 seq=15 (from 72042970 GoUnblock p=6 g=130083 off=414816 g=85 seq=14)
+72137113 GoUnblock p=3 g=85 off=69070 g=120 seq=2 (from 15978 GoWaiting p=1 g=120 off=270782 g=120, to 72144537 GoStart p=3 g=120 off=69081 g=120 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+72142959 GoBlockSelect p=3 g=85 off=69077 (to 79453635 GoUnblock p=3 g=131467 off=69364 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+79518488 GoStart p=6 g=85 off=414932 g=85 seq=17 (from 79453635 GoUnblock p=3 g=131467 off=69364 g=85 seq=0)
+79521902 GoBlockSelect p=6 g=85 off=414937 (to 80387345 GoUnblock p=3 g=130735 off=69545 g=85 seq=18)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+80476624 GoStart p=3 g=85 off=69628 g=85 seq=0 (from 80387345 GoUnblock p=3 g=130735 off=69545 g=85 seq=18)
+80477562 GoBlockSelect p=3 g=85 off=69632 (to 98268872 GoUnblock p=1 g=130647 off=283051 g=85 seq=20)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+98343922 GoStart p=2 g=85 off=5240 g=85 seq=21 (from 98268872 GoUnblock p=1 g=130647 off=283051 g=85 seq=20)
+98345522 GoUnblock p=2 g=85 off=5245 g=156 seq=2 (from 22719 GoWaiting p=1 g=156 off=271176 g=156, to 98351965 GoStart p=2 g=156 off=5256 g=156 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+98350578 GoBlockSelect p=2 g=85 off=5252 (to 101059077 GoUnblock p=2 g=131561 off=5789 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+101109786 GoStart p=5 g=85 off=396663 g=85 seq=23 (from 101059077 GoUnblock p=2 g=131561 off=5789 g=85 seq=0)
+101114245 GoBlockSelect p=5 g=85 off=396668 (to 108831510 GoUnblock p=2 g=131637 off=6355 g=85 seq=24)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+108891392 GoStart p=1 g=85 off=285156 g=85 seq=25 (from 108831510 GoUnblock p=2 g=131637 off=6355 g=85 seq=24)
+108894613 GoUnblock p=1 g=85 off=285161 g=195 seq=0 (from 29802 GoWaiting p=1 g=195 off=271605 g=195, to 108903787 GoStart p=1 g=195 off=285179 g=195 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+108899456 HeapAlloc p=1 g=85 off=285167 mem=13227920048
+108902379 GoBlockSelect p=1 g=85 off=285175 (to 109714020 GoUnblock p=8 g=131825 off=130497 g=85 seq=26)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+109758883 GoStart p=2 g=85 off=6531 g=85 seq=27 (from 109714020 GoUnblock p=8 g=131825 off=130497 g=85 seq=26)
+109761806 GoBlockSelect p=2 g=85 off=6535 (to 126708430 GoUnblock p=7 g=65588935 off=198725 g=85 seq=28)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+126753699 GoStart p=1 g=85 off=287098 g=85 seq=29 (from 126708430 GoUnblock p=7 g=65588935 off=198725 g=85 seq=28)
+126757240 GoUnblock p=1 g=85 off=287103 g=197 seq=0 (from 30015 GoWaiting p=1 g=197 off=271627 g=197, to 126763533 GoStart p=1 g=197 off=287113 g=197 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+126762104 GoBlockSelect p=1 g=85 off=287109 (to 132082590 GoUnblock p=1 g=130766 off=287829 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+132118003 GoStart p=7 g=85 off=198920 g=85 seq=31 (from 132082590 GoUnblock p=1 g=130766 off=287829 g=85 seq=0)
+132120969 GoBlockSelect p=7 g=85 off=198924 (to 145398377 GoUnblock p=1 g=132152 off=288663 g=85 seq=32)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+145452905 GoStart p=1 g=85 off=288730 g=85 seq=0 (from 145398377 GoUnblock p=1 g=132152 off=288663 g=85 seq=32)
+145455721 GoUnblock p=1 g=85 off=288734 g=118 seq=0 (from 15530 GoWaiting p=1 g=118 off=270764 g=118, to 145461182 GoStart p=1 g=118 off=288743 g=118 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+145459689 GoBlockSelect p=1 g=85 off=288739 (to 149155037 GoUnblock p=2 g=130919 off=8786 g=85 seq=34)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+149214962 GoStart p=1 g=85 off=289132 g=85 seq=35 (from 149155037 GoUnblock p=2 g=130919 off=8786 g=85 seq=34)
+149217415 GoBlockSelect p=1 g=85 off=289137 (to 178623002 GoUnblock p=8 g=131591 off=137265 g=85 seq=36)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+178682991 GoStart p=2 g=85 off=11960 g=85 seq=37 (from 178623002 GoUnblock p=8 g=131591 off=137265 g=85 seq=36)
+178688068 GoBlockSelect p=2 g=85 off=11965 (to 181171886 GoUnblock p=1 g=131059 off=291825 g=85 seq=38)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+181203032 GoStart p=2 g=85 off=12290 g=85 seq=39 (from 181171886 GoUnblock p=1 g=131059 off=291825 g=85 seq=38)
+181206083 GoUnblock p=2 g=85 off=12295 g=204 seq=2 (from 31189 GoWaiting p=1 g=204 off=271704 g=204, to 181217048 GoStart p=2 g=204 off=12307 g=204 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+181214382 GoBlockSelect p=2 g=85 off=12303 (to 200131676 GoUnblock p=4 g=131202 off=360432 g=85 seq=40)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+200216006 GoStart p=7 g=85 off=205515 g=85 seq=41 (from 200131676 GoUnblock p=4 g=131202 off=360432 g=85 seq=40)
+200221019 GoBlockSelect p=7 g=85 off=205520 (to 201799480 GoUnblock p=4 g=131604 off=360703 g=85 seq=42)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+201863138 GoStart p=7 g=85 off=205674 g=85 seq=43 (from 201799480 GoUnblock p=4 g=131604 off=360703 g=85 seq=42)
+201867277 GoUnblock p=7 g=85 off=205679 g=123 seq=2 (from 16597 GoWaiting p=1 g=123 off=270809 g=123, to 201880226 GoStart p=7 g=123 off=205690 g=123 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+201877858 GoBlockSelect p=7 g=85 off=205686 (to 203494271 GoUnblock p=3 g=131005 off=73284 g=85 seq=44)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+203552126 GoStart p=5 g=85 off=402059 g=85 seq=45 (from 203494271 GoUnblock p=3 g=131005 off=73284 g=85 seq=44)
+203554814 GoUnblock p=5 g=85 off=402064 g=132 seq=2 (from 18453 GoWaiting p=1 g=132 off=270899 g=132, to 203566547 GoStart p=5 g=132 off=402083 g=132 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+203559870 HeapAlloc p=5 g=85 off=402071 mem=13251507488
+203564051 GoBlockSelect p=5 g=85 off=402079 (to 206470884 GoUnblock p=8 g=131076 off=139657 g=85 seq=46)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+206580238 GoStart p=4 g=85 off=361244 g=85 seq=47 (from 206470884 GoUnblock p=8 g=131076 off=139657 g=85 seq=46)
+206583523 GoBlockSelect p=4 g=85 off=361248 (to 209239884 GoUnblock p=4 g=132135 off=361568 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+209303798 GoStart p=5 g=85 off=402296 g=85 seq=49 (from 209239884 GoUnblock p=4 g=132135 off=361568 g=85 seq=0)
+209307169 GoUnblock p=5 g=85 off=402301 g=151 seq=2 (from 21994 GoWaiting p=1 g=151 off=271121 g=151, to 209316299 GoStart p=5 g=151 off=402313 g=151 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+209314529 GoBlockSelect p=5 g=85 off=402309 (to 212327665 GoUnblock p=4 g=131153 off=361881 g=85 seq=50)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+212383024 GoStart p=7 g=85 off=209191 g=85 seq=51 (from 212327665 GoUnblock p=4 g=131153 off=361881 g=85 seq=50)
+212385499 GoUnblock p=7 g=85 off=209196 g=185 seq=2 (from 28266 GoWaiting p=1 g=185 off=271495 g=185, to 212391238 GoStart p=7 g=185 off=209207 g=185 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+212389915 GoBlockSelect p=7 g=85 off=209203 (to 216544780 GoUnblock p=4 g=131178 off=362261 g=85 seq=52)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+216605344 GoStart p=5 g=85 off=402720 g=85 seq=53 (from 216544780 GoUnblock p=4 g=131178 off=362261 g=85 seq=52)
+216610251 GoBlockSelect p=5 g=85 off=402725 (to 237323775 GoUnblock p=2 g=129973 off=15092 g=85 seq=54)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+237357226 GoStart p=3 g=85 off=74117 g=85 seq=55 (from 237323775 GoUnblock p=2 g=129973 off=15092 g=85 seq=54)
+237360063 GoUnblock p=3 g=85 off=74121 g=144 seq=2 (from 20714 GoWaiting p=1 g=144 off=271031 g=144, to 237366185 GoStart p=3 g=144 off=74133 g=144 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+237364735 GoBlockSelect p=3 g=85 off=74129 (to 265097525 GoUnblock p=6 g=131434 off=420339 g=85 seq=56)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+265164042 GoStart p=8 g=85 off=145354 g=85 seq=57 (from 265097525 GoUnblock p=6 g=131434 off=420339 g=85 seq=56)
+265168501 GoBlockSelect p=8 g=85 off=145359 (to 265315273 GoUnblock p=2 g=130210 off=17128 g=85 seq=58)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+265372275 GoStart p=8 g=85 off=145370 g=85 seq=59 (from 265315273 GoUnblock p=2 g=130210 off=17128 g=85 seq=58)
+265375688 GoUnblock p=8 g=85 off=145375 g=194 seq=2 (from 29695 GoWaiting p=1 g=194 off=271594 g=194, to 265389149 GoStart p=8 g=194 off=145387 g=194 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+265387699 GoBlockSelect p=8 g=85 off=145383 (to 269731106 GoUnblock p=8 g=129961 off=145665 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+269782199 GoStart p=6 g=85 off=420600 g=85 seq=61 (from 269731106 GoUnblock p=8 g=129961 off=145665 g=85 seq=0)
+269786231 GoUnblock p=6 g=85 off=420605 g=115 seq=2 (from 15061 GoWaiting p=1 g=115 off=270737 g=115, to 269793249 GoStart p=6 g=115 off=420616 g=115 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+269791756 GoBlockSelect p=6 g=85 off=420612 (to 272251147 GoUnblock p=6 g=132265 off=420857 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+272276470 GoStart p=4 g=85 off=366466 g=85 seq=63 (from 272251147 GoUnblock p=6 g=132265 off=420857 g=85 seq=0)
+272279073 GoBlockSelect p=4 g=85 off=366470 (to 278340118 GoUnblock p=2 g=130731 off=18680 g=85 seq=64)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+278399872 GoStart p=4 g=85 off=366795 g=85 seq=65 (from 278340118 GoUnblock p=2 g=130731 off=18680 g=85 seq=64)
+278403520 GoBlockSelect p=4 g=85 off=366800 (to 281265575 GoUnblock p=2 g=131700 off=19114 g=85 seq=66)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+281323196 GoStart p=3 g=85 off=81036 g=85 seq=67 (from 281265575 GoUnblock p=2 g=131700 off=19114 g=85 seq=66)
+281332027 GoUnblock p=3 g=85 off=81041 g=116 seq=2 (from 15167 GoWaiting p=1 g=116 off=270746 g=116, to 281337979 GoStart p=3 g=116 off=81052 g=116 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+281336635 GoBlockSelect p=3 g=85 off=81048 (to 283971322 GoUnblock p=6 g=132706 off=421246 g=85 seq=68)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+284001231 GoStart p=4 g=85 off=367168 g=85 seq=69 (from 283971322 GoUnblock p=6 g=132706 off=421246 g=85 seq=68)
+284004623 GoBlockSelect p=4 g=85 off=367173 (to 292294022 GoUnblock p=6 g=132947 off=421821 g=85 seq=70)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+292340720 GoStart p=2 g=85 off=21777 g=85 seq=71 (from 292294022 GoUnblock p=6 g=132947 off=421821 g=85 seq=70)
+292345328 GoBlockSelect p=2 g=85 off=21782 (to 292748716 GoUnblock p=2 g=131877 off=21926 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+292817516 GoStart p=3 g=85 off=83494 g=85 seq=73 (from 292748716 GoUnblock p=2 g=131877 off=21926 g=85 seq=0)
+292819628 GoUnblock p=3 g=85 off=83499 g=153 seq=2 (from 22421 GoWaiting p=1 g=153 off=271143 g=153, to 292830550 GoStart p=3 g=153 off=83510 g=153 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+292828481 GoBlockSelect p=3 g=85 off=83506 (to 315764727 GoUnblock p=8 g=130653 off=145989 g=85 seq=74)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+315833526 GoStart p=2 g=85 off=23950 g=85 seq=75 (from 315764727 GoUnblock p=8 g=130653 off=145989 g=85 seq=74)
+315836918 GoBlockSelect p=2 g=85 off=23955 (to 324265495 GoUnblock p=4 g=130307 off=369378 g=85 seq=76)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+324319297 GoStart p=7 g=85 off=216656 g=85 seq=77 (from 324265495 GoUnblock p=4 g=130307 off=369378 g=85 seq=76)
+324321750 GoUnblock p=7 g=85 off=216661 g=187 seq=2 (from 28479 GoWaiting p=1 g=187 off=271517 g=187, to 324331030 GoStart p=7 g=187 off=216672 g=187 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+324329558 GoBlockSelect p=7 g=85 off=216668 (to 329541992 GoUnblock p=2 g=132060 off=25431 g=85 seq=78)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+329605671 GoStart p=4 g=85 off=369526 g=85 seq=79 (from 329541992 GoUnblock p=2 g=132060 off=25431 g=85 seq=78)
+329607975 GoUnblock p=4 g=85 off=369531 g=167 seq=2 (from 24319 GoWaiting p=1 g=167 off=271297 g=167, to 329622055 GoStart p=4 g=167 off=369542 g=167 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+329620199 GoBlockSelect p=4 g=85 off=369538 (to 357925870 GoUnblock p=2 g=62073361 off=27877 g=85 seq=80)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+357979416 GoStart p=7 g=85 off=217582 g=85 seq=81 (from 357925870 GoUnblock p=2 g=62073361 off=27877 g=85 seq=80)
+357981848 GoUnblock p=7 g=85 off=217587 g=193 seq=2 (from 29589 GoWaiting p=1 g=193 off=271583 g=193, to 357991043 GoStart p=7 g=193 off=217598 g=193 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+357989571 GoBlockSelect p=7 g=85 off=217594 (to 365417751 GoUnblock p=2 g=132741 off=28501 g=85 seq=82)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+365449836 GoStart p=3 g=85 off=92793 g=85 seq=83 (from 365417751 GoUnblock p=2 g=132741 off=28501 g=85 seq=82)
+365451734 GoUnblock p=3 g=85 off=92797 g=119 seq=2 (from 15786 GoWaiting p=1 g=119 off=270773 g=119, to 365457772 GoStart p=3 g=119 off=92807 g=119 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+365456257 GoBlockSelect p=3 g=85 off=92803 (to 373199271 GoUnblock p=3 g=130755 off=93930 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+373262055 GoStart p=2 g=85 off=28730 g=85 seq=85 (from 373199271 GoUnblock p=3 g=130755 off=93930 g=85 seq=0)
+373267793 GoUnblock p=2 g=85 off=28735 g=122 seq=2 (from 16319 GoWaiting p=1 g=122 off=270800 g=122, to 373274769 GoStart p=2 g=122 off=28753 g=122 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+373272572 HeapAlloc p=2 g=85 off=28742 mem=13283510504
+373273361 GoBlockSelect p=2 g=85 off=28750 (to 394723775 GoUnblock p=7 g=131160 off=220459 g=85 seq=86)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+394785663 GoStart p=3 g=85 off=94898 g=85 seq=87 (from 394723775 GoUnblock p=7 g=131160 off=220459 g=85 seq=86)
+394790718 GoUnblock p=3 g=85 off=94903 g=148 seq=2 (from 21162 GoWaiting p=1 g=148 off=271075 g=148, to 394796820 GoStart p=3 g=148 off=94915 g=148 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+394795412 GoBlockSelect p=3 g=85 off=94911 (to 396463728 GoUnblock p=3 g=130379 off=95269 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+396559130 GoStart p=3 g=85 off=95318 g=85 seq=0 (from 396463728 GoUnblock p=3 g=130379 off=95269 g=85 seq=0)
+396561391 GoBlockSelect p=3 g=85 off=95322 (to 399523541 GoUnblock p=4 g=132342 off=375735 g=85 seq=90)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+399573524 GoStart p=4 g=85 off=375794 g=85 seq=0 (from 399523541 GoUnblock p=4 g=132342 off=375735 g=85 seq=90)
+399575402 GoBlockSelect p=4 g=85 off=375798 (to 421254464 GoUnblock p=2 g=131874 off=33053 g=85 seq=92)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+421327893 GoStart p=6 g=85 off=423860 g=85 seq=93 (from 421254464 GoUnblock p=2 g=131874 off=33053 g=85 seq=92)
+421331349 GoUnblock p=6 g=85 off=423865 g=199 seq=2 (from 30549 GoWaiting p=1 g=199 off=271649 g=199, to 421338026 GoStart p=6 g=199 off=423877 g=199 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+421336639 GoBlockSelect p=6 g=85 off=423873 (to 465954273 GoUnblock p=6 g=130035 off=426416 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+466017184 GoStart p=6 g=85 off=426480 g=85 seq=0 (from 465954273 GoUnblock p=6 g=130035 off=426416 g=85 seq=0)
+466019467 GoBlockSelect p=6 g=85 off=426484 (to 471743640 GoUnblock p=8 g=0 off=151605 g=85 seq=96)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+471747971 GoStart p=8 g=85 off=151611 g=85 seq=0 (from 471743640 GoUnblock p=8 g=0 off=151605 g=85 seq=96)
+471749251 GoUnblock p=8 g=85 off=151615 g=198 seq=2 (from 30207 GoWaiting p=1 g=198 off=271638 g=198, to 471754179 GoStart p=8 g=198 off=151627 g=198 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+471752664 GoBlockSelect p=8 g=85 off=151622 (to 479825852 GoUnblock p=2 g=131282 off=36208 g=85 seq=98)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+479882513 GoStart p=4 g=85 off=380813 g=85 seq=99 (from 479825852 GoUnblock p=2 g=131282 off=36208 g=85 seq=98)
+479896081 GoUnblock p=4 g=85 off=380818 g=117 seq=2 (from 15274 GoWaiting p=1 g=117 off=270755 g=117, to 479910566 GoStart p=4 g=117 off=380829 g=117 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+479908454 GoBlockSelect p=4 g=85 off=380825 (to 489403602 GoUnblock p=7 g=131062 off=221823 g=85 seq=100)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+489449724 GoStart p=5 g=85 off=404431 g=85 seq=101 (from 489403602 GoUnblock p=7 g=131062 off=221823 g=85 seq=100)
+489455100 GoUnblock p=5 g=85 off=404436 g=180 seq=2 (from 27498 GoWaiting p=1 g=180 off=271440 g=180, to 489465468 GoStart p=5 g=180 off=404448 g=180 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+489463271 GoBlockSelect p=5 g=85 off=404444 (to 504586338 GoUnblock p=2 g=131369 off=38142 g=85 seq=102)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+504656652 GoStart p=4 g=85 off=384507 g=85 seq=103 (from 504586338 GoUnblock p=2 g=131369 off=38142 g=85 seq=102)
+504663158 GoUnblock p=4 g=85 off=384512 g=169 seq=2 (from 24767 GoWaiting p=1 g=169 off=271319 g=169, to 504673868 GoStart p=4 g=169 off=384524 g=169 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+504671542 GoBlockSelect p=4 g=85 off=384520 (to 507076001 GoUnblock p=4 g=130339 off=384792 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+507143819 GoStart p=4 g=85 off=384865 g=85 seq=0 (from 507076001 GoUnblock p=4 g=130339 off=384792 g=85 seq=0)
+507146465 GoBlockSelect p=4 g=85 off=384869 (to 514895623 GoUnblock p=5 g=130829 off=407410 g=85 seq=106)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+514927388 GoStart p=6 g=85 off=428991 g=85 seq=107 (from 514895623 GoUnblock p=5 g=130829 off=407410 g=85 seq=106)
+514931036 GoBlockSelect p=6 g=85 off=428996 (to 554628222 GoUnblock p=12 g=130843 off=685717 g=85 seq=108)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+554887100 GoStart p=12 g=85 off=685866 g=85 seq=0 (from 554628222 GoUnblock p=12 g=130843 off=685717 g=85 seq=108)
+554890897 GoUnblock p=12 g=85 off=685869 g=188 seq=2 (from 28778 GoWaiting p=1 g=188 off=271528 g=188, to 554904081 GoStart p=12 g=188 off=685881 g=188 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+554902118 GoBlockSelect p=12 g=85 off=685877 (to 560046564 GoUnblock p=14 g=130368 off=782325 g=85 seq=110)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+560175373 GoStart p=14 g=85 off=782406 g=85 seq=0 (from 560046564 GoUnblock p=14 g=130368 off=782325 g=85 seq=110)
+560186957 GoUnblock p=14 g=85 off=782409 g=183 seq=2 (from 28053 GoWaiting p=1 g=183 off=271473 g=183, to 560198072 GoStart p=14 g=183 off=782429 g=183 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+560191693 HeapAlloc p=14 g=85 off=782417 mem=13311835952
+560195832 GoBlockSelect p=14 g=85 off=782425 (to 562202449 GoUnblock p=9 g=130237 off=527626 g=85 seq=112)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+562364346 GoStart p=9 g=85 off=527730 g=85 seq=0 (from 562202449 GoUnblock p=9 g=130237 off=527626 g=85 seq=112)
+562372495 GoBlockSelect p=9 g=85 off=527733 (to 564455506 GoUnblock p=8 g=131634 off=153784 g=85 seq=114)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+564728507 GoStart p=8 g=85 off=153877 g=85 seq=0 (from 564455506 GoUnblock p=8 g=131634 off=153784 g=85 seq=114)
+564738341 GoBlockSelect p=8 g=85 off=153880 (to 570467613 GoUnblock p=7 g=130869 off=222642 g=85 seq=116)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+570533767 GoStart p=11 g=85 off=625787 g=85 seq=117 (from 570467613 GoUnblock p=7 g=130869 off=222642 g=85 seq=116)
+570537138 GoUnblock p=11 g=85 off=625792 g=127 seq=2 (from 17237 GoWaiting p=1 g=127 off=270845 g=127, to 570553735 GoStart p=11 g=127 off=625811 g=127 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+570542727 HeapAlloc p=11 g=85 off=625799 mem=13313340464
+570551154 GoBlockSelect p=11 g=85 off=625807 (to 585984021 GoUnblock p=9 g=129944 off=529356 g=85 seq=118)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+586095444 GoStart p=9 g=85 off=529425 g=85 seq=0 (from 585984021 GoUnblock p=9 g=129944 off=529356 g=85 seq=118)
+586099476 GoBlockSelect p=9 g=85 off=529429 (to 588760849 GoUnblock p=9 g=131026 off=529559 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+588922981 GoStart p=12 g=85 off=687709 g=85 seq=121 (from 588760849 GoUnblock p=9 g=131026 off=529559 g=85 seq=0)
+588929339 GoUnblock p=12 g=85 off=687714 g=157 seq=2 (from 22826 GoWaiting p=1 g=157 off=271187 g=157, to 588946213 GoStart p=12 g=157 off=687726 g=157 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+588944080 GoBlockSelect p=12 g=85 off=687722 (to 596523533 GoUnblock p=8 g=132008 off=155461 g=85 seq=122)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+596811381 GoStart p=11 g=85 off=626837 g=85 seq=123 (from 596523533 GoUnblock p=8 g=132008 off=155461 g=85 seq=122)
+596820021 GoBlockSelect p=11 g=85 off=626842 (to 601446882 GoUnblock p=9 g=132632 off=530077 g=85 seq=124)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+601650251 GoStart p=9 g=85 off=530168 g=85 seq=0 (from 601446882 GoUnblock p=9 g=132632 off=530077 g=85 seq=124)
+601661130 GoBlockSelect p=9 g=85 off=530171 (to 605912698 GoUnblock p=12 g=131693 off=689196 g=85 seq=126)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+606161357 GoStart p=12 g=85 off=689279 g=85 seq=0 (from 605912698 GoUnblock p=12 g=131693 off=689196 g=85 seq=126)
+606167331 GoUnblock p=12 g=85 off=689282 g=121 seq=2 (from 16149 GoWaiting p=1 g=121 off=270791 g=121, to 606178552 GoStart p=12 g=121 off=689293 g=121 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+606176269 GoBlockSelect p=12 g=85 off=689289 (to 619900031 GoUnblock p=3 g=132249 off=106278 g=85 seq=128)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+620176466 GoStart p=3 g=85 off=106359 g=85 seq=0 (from 619900031 GoUnblock p=3 g=132249 off=106278 g=85 seq=128)
+620183101 GoBlockSelect p=3 g=85 off=106362 (to 657053453 GoUnblock p=3 g=0 off=107226 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+657054008 GoStart p=3 g=85 off=107231 g=85 seq=0 (from 657053453 GoUnblock p=3 g=0 off=107226 g=85 seq=0)
+657056824 GoUnblock p=3 g=85 off=107234 g=130 seq=2 (from 17685 GoWaiting p=1 g=130 off=270877 g=130, to 657066168 GoStart p=3 g=130 off=107254 g=130 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+657062989 HeapAlloc p=3 g=85 off=107242 mem=13321522840
+657064077 GoBlockSelect p=3 g=85 off=107250 (to 667133578 GoUnblock p=15 g=133273 off=822969 g=85 seq=132)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+667346333 GoStart p=15 g=85 off=823073 g=85 seq=0 (from 667133578 GoUnblock p=15 g=133273 off=822969 g=85 seq=132)
+667375687 GoBlockSelect p=15 g=85 off=823076 (to 682652993 GoUnblock p=11 g=131530 off=632374 g=85 seq=134)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+683444026 GoStart p=11 g=85 off=632667 g=85 seq=0 (from 682652993 GoUnblock p=11 g=131530 off=632374 g=85 seq=134)
+683477775 GoBlockSelect p=11 g=85 off=632671 (to 691408052 GoUnblock p=12 g=131039 off=690884 g=85 seq=136)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+691668529 GoStart p=12 g=85 off=690988 g=85 seq=0 (from 691408052 GoUnblock p=12 g=131039 off=690884 g=85 seq=136)
+691672903 GoUnblock p=12 g=85 off=690991 g=173 seq=2 (from 25898 GoWaiting p=1 g=173 off=271363 g=173, to 691683953 GoStart p=12 g=173 off=691003 g=173 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+691681777 GoBlockSelect p=12 g=85 off=690999 (to 707905464 GoUnblock p=8 g=132052 off=157479 g=85 seq=138)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+708031265 GoStart p=8 g=85 off=157549 g=85 seq=0 (from 707905464 GoUnblock p=8 g=132052 off=157479 g=85 seq=138)
+708039116 GoUnblock p=8 g=85 off=157553 g=174 seq=2 (from 26005 GoWaiting p=1 g=174 off=271374 g=174, to 708058721 GoStart p=8 g=174 off=157565 g=174 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+708056438 GoBlockSelect p=8 g=85 off=157561 (to 747540037 GoUnblock p=14 g=131117 off=786455 g=85 seq=140)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+748361385 GoStart p=7 g=85 off=231334 g=85 seq=141 (from 747540037 GoUnblock p=14 g=131117 off=786455 g=85 seq=140)
+748368126 GoBlockSelect p=7 g=85 off=231340 (to 750998161 GoUnblock p=8 g=63710732 off=159115 g=85 seq=142)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+751224122 GoStart p=8 g=85 off=159197 g=85 seq=0 (from 750998161 GoUnblock p=8 g=63710732 off=159115 g=85 seq=142)
+751228154 GoUnblock p=8 g=85 off=159200 g=159 seq=2 (from 23039 GoWaiting p=1 g=159 off=271209 g=159, to 751238351 GoStart p=8 g=159 off=159212 g=159 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+751236367 GoBlockSelect p=8 g=85 off=159208 (to 754535560 GoUnblock p=14 g=131009 off=786777 g=85 seq=144)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+754777008 GoStart p=11 g=85 off=635297 g=85 seq=145 (from 754535560 GoUnblock p=14 g=131009 off=786777 g=85 seq=144)
+754783045 GoBlockSelect p=11 g=85 off=635303 (to 767551146 GoUnblock p=12 g=131119 off=693146 g=85 seq=146)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+768925897 GoStart p=7 g=85 off=233268 g=85 seq=147 (from 767551146 GoUnblock p=12 g=131119 off=693146 g=85 seq=146)
+768931827 GoUnblock p=7 g=85 off=233274 g=149 seq=2 (from 21269 GoWaiting p=1 g=149 off=271086 g=149, to 768984158 GoStart p=7 g=149 off=233287 g=149 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+768981491 GoBlockSelect p=7 g=85 off=233282 (to 769257883 GoUnblock p=11 g=63710240 off=635465 g=85 seq=148)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+769651117 GoStart p=2 g=85 off=44270 g=85 seq=149 (from 769257883 GoUnblock p=11 g=63710240 off=635465 g=85 seq=148)
+769666712 GoBlockSelect p=2 g=85 off=44276 (to 789817489 GoUnblock p=13 g=132118 off=742806 g=85 seq=150)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+790349729 GoStart p=2 g=85 off=45608 g=85 seq=151 (from 789817489 GoUnblock p=13 g=132118 off=742806 g=85 seq=150)
+790355617 GoBlockSelect p=2 g=85 off=45614 (to 808727957 GoUnblock p=7 g=131650 off=233738 g=85 seq=152)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+811449383 GoStart p=8 g=85 off=160512 g=85 seq=153 (from 808727957 GoUnblock p=7 g=131650 off=233738 g=85 seq=152)
+811453735 GoUnblock p=8 g=85 off=160518 g=203 seq=2 (from 31082 GoWaiting p=1 g=203 off=271693 g=203, to 811468946 GoStart p=8 g=203 off=160538 g=203 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+811460498 HeapAlloc p=8 g=85 off=160526 mem=13345882480
+811466727 GoBlockSelect p=8 g=85 off=160534 (to 850471738 GoUnblock p=11 g=131328 off=639697 g=85 seq=154)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+851101322 GoStart p=11 g=85 off=639780 g=85 seq=0 (from 850471738 GoUnblock p=11 g=131328 off=639697 g=85 seq=154)
+851111669 GoBlockSelect p=11 g=85 off=639784 (to 865978802 GoUnblock p=6 g=0 off=434158 g=85 seq=156)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+865979250 GoStart p=6 g=85 off=434166 g=85 seq=0 (from 865978802 GoUnblock p=6 g=0 off=434158 g=85 seq=156)
+865981490 GoUnblock p=6 g=85 off=434169 g=172 seq=2 (from 25770 GoWaiting p=1 g=172 off=271352 g=172, to 867762210 GoStart p=6 g=172 off=434189 g=172 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+865985628 GCMarkAssistStart p=6 g=85 off=434176
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+867749154 GCMarkAssistDone p=6 g=85 off=434181
+867757986 GoBlockSelect p=6 g=85 off=434185 (to 875233227 GoUnblock p=2 g=130905 off=49121 g=85 seq=158)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+875665692 GoStart p=2 g=85 off=49243 g=85 seq=0 (from 875233227 GoUnblock p=2 g=130905 off=49121 g=85 seq=158)
+875670983 GoBlockSelect p=2 g=85 off=49247 (to 887901680 GoUnblock p=15 g=132807 off=830072 g=85 seq=160)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+890554670 GoStart p=15 g=85 off=830153 g=85 seq=0 (from 887901680 GoUnblock p=15 g=132807 off=830072 g=85 seq=160)
+890558681 GoUnblock p=15 g=85 off=830157 g=158 seq=2 (from 22933 GoWaiting p=1 g=158 off=271198 g=158, to 890586756 GoStart p=15 g=158 off=830169 g=158 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+890584473 GoBlockSelect p=15 g=85 off=830165 (to 893308182 GoUnblock p=9 g=129405 off=535353 g=85 seq=162)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+895406126 GoStart p=9 g=85 off=535437 g=85 seq=0 (from 893308182 GoUnblock p=9 g=129405 off=535353 g=85 seq=162)
+895410201 GoUnblock p=9 g=85 off=535441 g=189 seq=2 (from 28949 GoWaiting p=1 g=189 off=271539 g=189, to 895424558 GoStart p=9 g=189 off=535461 g=189 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+895417561 HeapAlloc p=9 g=85 off=535449 mem=13356774256
+895422382 GoBlockSelect p=9 g=85 off=535457 (to 897277321 GoUnblock p=10 g=131893 off=580804 g=85 seq=164)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+898216235 GoStart p=11 g=85 off=642063 g=85 seq=165 (from 897277321 GoUnblock p=10 g=131893 off=580804 g=85 seq=164)
+898222742 GoBlockSelect p=11 g=85 off=642069 (to 902732099 GoUnblock p=15 g=130885 off=830595 g=85 seq=166)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+904215841 GoStart p=15 g=85 off=830658 g=85 seq=0 (from 902732099 GoUnblock p=15 g=130885 off=830595 g=85 seq=166)
+904230625 GoUnblock p=15 g=85 off=830662 g=131 seq=2 (from 18282 GoWaiting p=1 g=131 off=270888 g=131, to 904243702 GoStart p=15 g=131 off=830682 g=131 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+904236918 HeapAlloc p=15 g=85 off=830670 mem=13357725104
+904241739 GoBlockSelect p=15 g=85 off=830678 (to 905290327 GoUnblock p=8 g=130788 off=163714 g=85 seq=168)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+905373185 GoStart p=3 g=85 off=114247 g=85 seq=169 (from 905290327 GoUnblock p=8 g=130788 off=163714 g=85 seq=168)
+905387926 GoBlockSelect p=3 g=85 off=114253 (to 959326587 GoUnblock p=11 g=130441 off=644178 g=85 seq=170)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+960891501 GoStart p=11 g=85 off=644275 g=85 seq=0 (from 959326587 GoUnblock p=11 g=130441 off=644178 g=85 seq=170)
+961043543 GoUnblock p=11 g=85 off=644278 g=190 seq=2 (from 29290 GoWaiting p=1 g=190 off=271550 g=190, to 964542925 GoStart p=8 g=190 off=165334 g=190 seq=3)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+961066028 GoUnblock p=11 g=85 off=644286 g=126 seq=2 (from 17066 GoWaiting p=1 g=126 off=270836 g=126, to 961073686 GoStart p=11 g=126 off=644297 g=126 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+961071382 GoBlockSelect p=11 g=85 off=644293 (to 962751560 GoUnblock p=2 g=131268 off=53334 g=85 seq=172)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+972628251 GoStart p=12 g=85 off=699497 g=85 seq=173 (from 962751560 GoUnblock p=2 g=131268 off=53334 g=85 seq=172)
+972633969 GoBlockSelect p=12 g=85 off=699502 (to 995936782 GoUnblock p=3 g=131330 off=116955 g=85 seq=174)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1041355774 GoStart p=3 g=85 off=118486 g=85 seq=0 (from 995936782 GoUnblock p=3 g=131330 off=116955 g=85 seq=174)
+1041361086 GoUnblock p=3 g=85 off=118490 g=150 seq=2 (from 21866 GoWaiting p=1 g=150 off=271110 g=150, to 1041384744 GoStart p=3 g=150 off=118502 g=150 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1041382483 GoBlockSelect p=3 g=85 off=118498 (to 1055523862 GoUnblock p=8 g=131522 off=169458 g=85 seq=176)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1056664908 GoStart p=8 g=85 off=169556 g=85 seq=0 (from 1055523862 GoUnblock p=8 g=131522 off=169458 g=85 seq=176)
+1056670050 GoUnblock p=8 g=85 off=169560 g=164 seq=2 (from 23914 GoWaiting p=1 g=164 off=271264 g=164, to 1056682295 GoStart p=8 g=164 off=169572 g=164 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1056680289 GoBlockSelect p=8 g=85 off=169568 (to 1063884962 GoUnblock p=10 g=65979812 off=583154 g=85 seq=178)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1066859933 GoStart p=10 g=85 off=583280 g=85 seq=0 (from 1063884962 GoUnblock p=10 g=65979812 off=583154 g=85 seq=178)
+1066865565 GoBlockSelect p=10 g=85 off=583283 (to 1071338699 GoUnblock p=2 g=130129 off=55621 g=85 seq=180)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1073930996 GoStart p=2 g=85 off=55714 g=85 seq=0 (from 1071338699 GoUnblock p=2 g=130129 off=55621 g=85 seq=180)
+1073937247 GoUnblock p=2 g=85 off=55718 g=182 seq=2 (from 27946 GoWaiting p=1 g=182 off=271462 g=182, to 1073948212 GoStart p=2 g=182 off=55730 g=182 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1073946100 GoBlockSelect p=2 g=85 off=55726 (to 1075071829 GoUnblock p=13 g=131491 off=752632 g=85 seq=182)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1077856999 GoStart p=13 g=85 off=752705 g=85 seq=0 (from 1075071829 GoUnblock p=13 g=131491 off=752632 g=85 seq=182)
+1077876433 GoUnblock p=13 g=85 off=752709 g=146 seq=2 (from 20949 GoWaiting p=1 g=146 off=271053 g=146, to 1077886503 GoStart p=13 g=146 off=752721 g=146 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1077884391 GoBlockSelect p=13 g=85 off=752717 (to 1079233349 GoUnblock p=12 g=130212 off=702961 g=85 seq=184)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1093448755 GoStart p=12 g=85 off=703426 g=85 seq=0 (from 1079233349 GoUnblock p=12 g=130212 off=702961 g=85 seq=184)
+1093454621 GoBlockSelect p=12 g=85 off=703430 (to 1120869143 GoUnblock p=12 g=130693 off=704258 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1121960802 GoStart p=12 g=85 off=704339 g=85 seq=0 (from 1120869143 GoUnblock p=12 g=130693 off=704258 g=85 seq=0)
+1121967394 GoUnblock p=12 g=85 off=704342 g=152 seq=2 (from 22250 GoWaiting p=1 g=152 off=271132 g=152, to 1121978295 GoStart p=12 g=152 off=704354 g=152 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1121975757 GoBlockSelect p=12 g=85 off=704350 (to 1125031346 GoUnblock p=7 g=131000 off=237975 g=85 seq=188)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1128100738 GoStart p=7 g=85 off=238073 g=85 seq=0 (from 1125031346 GoUnblock p=7 g=131000 off=237975 g=85 seq=188)
+1128107692 GoBlockSelect p=7 g=85 off=238077 (to 1131553016 GoUnblock p=13 g=131432 off=753928 g=85 seq=190)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1132599002 GoStart p=13 g=85 off=754039 g=85 seq=0 (from 1131553016 GoUnblock p=13 g=131432 off=753928 g=85 seq=190)
+1132616324 GoUnblock p=13 g=85 off=754042 g=124 seq=2 (from 16767 GoWaiting p=1 g=124 off=270818 g=124, to 1132626394 GoStart p=13 g=124 off=754053 g=124 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1132624410 GoBlockSelect p=13 g=85 off=754049 (to 1141880648 GoUnblock p=11 g=131190 off=650332 g=85 seq=192)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1145113857 GoStart p=11 g=85 off=650440 g=85 seq=0 (from 1141880648 GoUnblock p=11 g=131190 off=650332 g=85 seq=192)
+1145133974 GoBlockSelect p=11 g=85 off=650444 (to 1164769769 GoUnblock p=3 g=131612 off=123278 g=85 seq=194)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1171003421 GoStart p=3 g=85 off=123517 g=85 seq=0 (from 1164769769 GoUnblock p=3 g=131612 off=123278 g=85 seq=194)
+1171006258 GoUnblock p=3 g=85 off=123521 g=45 seq=2 (from 9919 GoWaiting p=1 g=45 off=270601 g=45, to 1189557476 GoStart p=3 g=45 off=123624 g=45 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1171013426 HeapAlloc p=3 g=85 off=123528 mem=13393264960
+1171016989 GoBlockSelect p=3 g=85 off=123536 (to 1207487345 GoUnblock p=7 g=132146 off=239638 g=85 seq=196)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1208401854 GoStart p=7 g=85 off=239720 g=85 seq=0 (from 1207487345 GoUnblock p=7 g=132146 off=239638 g=85 seq=196)
+1208404990 GoBlockSelect p=7 g=85 off=239724 (to 1209301451 GoUnblock p=7 g=130880 off=239839 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1210424855 GoStart p=7 g=85 off=239935 g=85 seq=0 (from 1209301451 GoUnblock p=7 g=130880 off=239839 g=85 seq=0)
+1210428588 GoBlockSelect p=7 g=85 off=239939 (to 1234152432 GoUnblock p=8 g=130479 off=177556 g=85 seq=200)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1234824363 GoStart p=8 g=85 off=177684 g=85 seq=0 (from 1234152432 GoUnblock p=8 g=130479 off=177556 g=85 seq=200)
+1234828373 GoUnblock p=8 g=85 off=177688 g=196 seq=2 (from 29909 GoWaiting p=1 g=196 off=271616 g=196, to 1234835072 GoStart p=8 g=196 off=177701 g=196 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1234833109 GoBlockSelect p=8 g=85 off=177696 (to 1237196672 GoUnblock p=15 g=130451 off=837927 g=85 seq=202)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1238752413 GoStart p=15 g=85 off=838010 g=85 seq=0 (from 1237196672 GoUnblock p=15 g=130451 off=837927 g=85 seq=202)
+1238754952 GCMarkAssistStart p=15 g=85 off=838014
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  4c7d2d time.NewTimer time/sleep.go:88
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1240063783 GCMarkAssistDone p=15 g=85 off=838018
+1240070567 GoBlockSelect p=15 g=85 off=838022 (to 1249832870 GoUnblock p=6 g=132378 off=440653 g=85 seq=204)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1250597173 GoStart p=6 g=85 off=440740 g=85 seq=0 (from 1249832870 GoUnblock p=6 g=132378 off=440653 g=85 seq=204)
+1250599989 GoBlockSelect p=6 g=85 off=440744 (to 1251730262 GoUnblock p=12 g=132382 off=707589 g=85 seq=206)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1253872024 GoStart p=12 g=85 off=707676 g=85 seq=0 (from 1251730262 GoUnblock p=12 g=132382 off=707589 g=85 seq=206)
+1253894403 GoUnblock p=12 g=85 off=707680 g=205 seq=2 (from 31295 GoWaiting p=1 g=205 off=271715 g=205, to 1253906690 GoStart p=12 g=205 off=707692 g=205 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1253904472 GoBlockSelect p=12 g=85 off=707688 (to 1264565093 GoUnblock p=13 g=131399 off=757787 g=85 seq=208)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1265804420 GoStart p=13 g=85 off=757876 g=85 seq=0 (from 1264565093 GoUnblock p=13 g=131399 off=757787 g=85 seq=208)
+1265900825 GoBlockSelect p=13 g=85 off=757879 (to 1275080605 GoUnblock p=7 g=131756 off=242315 g=85 seq=210)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1287738222 GoStart p=7 g=85 off=242886 g=85 seq=0 (from 1275080605 GoUnblock p=7 g=131756 off=242315 g=85 seq=210)
+1287746030 GoUnblock p=7 g=85 off=242890 g=43 seq=2 (from 13503 GoWaiting p=1 g=43 off=270674 g=43, to 1289661234 GoStart p=7 g=43 off=243077 g=43 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1287770115 GoUnblock p=7 g=85 off=242897 g=49 seq=2 (from 14549 GoWaiting p=1 g=49 off=270719 g=49, to 1290682793 GoStart p=7 g=49 off=243135 g=49 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1287783747 GoUnblock p=7 g=85 off=242904 g=133 seq=2 (from 18623 GoWaiting p=1 g=133 off=270910 g=133, to 1287794264 GoStart p=7 g=133 off=242916 g=133 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1287792003 GoBlockSelect p=7 g=85 off=242912 (to 1318758215 GoUnblock p=7 g=130473 off=244171 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1320080209 GoStart p=7 g=85 off=244351 g=85 seq=0 (from 1318758215 GoUnblock p=7 g=130473 off=244171 g=85 seq=0)
+1320086161 GoUnblock p=7 g=85 off=244354 g=179 seq=2 (from 27327 GoWaiting p=1 g=179 off=271429 g=179, to 1320099409 GoStart p=7 g=179 off=244374 g=179 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1320092817 HeapAlloc p=7 g=85 off=244362 mem=13410506640
+1320097190 GoBlockSelect p=7 g=85 off=244370 (to 1378373284 GoUnblock p=7 g=0 off=246801 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1378376591 GoStart p=7 g=85 off=246806 g=85 seq=0 (from 1378373284 GoUnblock p=7 g=0 off=246801 g=85 seq=0)
+1378380026 GoUnblock p=7 g=85 off=246810 g=128 seq=2 (from 17365 GoWaiting p=1 g=128 off=270855 g=128, to 1378390138 GoStart p=7 g=128 off=246823 g=128 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1378387727 GoBlockSelect p=7 g=85 off=246818 (to 1400035750 GoUnblock p=6 g=130783 off=443385 g=85 seq=216)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1402884535 GoStart p=6 g=85 off=443481 g=85 seq=0 (from 1400035750 GoUnblock p=6 g=130783 off=443385 g=85 seq=216)
+1402904866 GCMarkAssistStart p=6 g=85 off=443485
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  407169 runtime.makechan runtime/chan.go:106
+  4c7d0d time.NewTimer time/sleep.go:87
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1404206486 GCMarkAssistDone p=6 g=85 off=443490
+1404214955 GoBlockSelect p=6 g=85 off=443494 (to 1406998632 GoUnblock p=3 g=131602 off=127132 g=85 seq=218)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1422102072 GoStart p=3 g=85 off=127514 g=85 seq=0 (from 1406998632 GoUnblock p=3 g=131602 off=127132 g=85 seq=218)
+1422107662 GoBlockSelect p=3 g=85 off=127518 (to 1427730674 GoUnblock p=12 g=130090 off=710663 g=85 seq=220)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1430919680 GoStart p=12 g=85 off=710779 g=85 seq=0 (from 1427730674 GoUnblock p=12 g=130090 off=710663 g=85 seq=220)
+1430938069 GoBlockSelect p=12 g=85 off=710783 (to 1449964995 GoUnblock p=11 g=131734 off=655884 g=85 seq=222)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1471581189 GoStart p=11 g=85 off=656503 g=85 seq=0 (from 1449964995 GoUnblock p=11 g=131734 off=655884 g=85 seq=222)
+1471585498 GoUnblock p=11 g=85 off=656507 g=129 seq=2 (from 17557 GoWaiting p=1 g=129 off=270866 g=129, to 1471594116 GoStart p=11 g=129 off=656520 g=129 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1471591834 GoBlockSelect p=11 g=85 off=656515 (to 1474225709 GoUnblock p=2 g=130410 off=305197 g=85 seq=224)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1485138829 GoStart p=2 g=85 off=305528 g=85 seq=0 (from 1474225709 GoUnblock p=2 g=130410 off=305197 g=85 seq=224)
+1485148109 GoBlockSelect p=2 g=85 off=305531 (to 1495494685 GoUnblock p=15 g=131933 off=841737 g=85 seq=226)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1496643517 GoStart p=15 g=85 off=841820 g=85 seq=0 (from 1495494685 GoUnblock p=15 g=131933 off=841737 g=85 seq=226)
+1496650045 GoBlockSelect p=15 g=85 off=841824 (to 1509912925 GoUnblock p=6 g=130109 off=445748 g=85 seq=228)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1513045591 GoStart p=6 g=85 off=445840 g=85 seq=0 (from 1509912925 GoUnblock p=6 g=130109 off=445748 g=85 seq=228)
+1513050093 GoUnblock p=6 g=85 off=445844 g=186 seq=2 (from 28373 GoWaiting p=1 g=186 off=271506 g=186, to 1513074199 GoStart p=6 g=186 off=445856 g=186 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1513071319 GoBlockSelect p=6 g=85 off=445852 (to 1524317449 GoUnblock p=7 g=131185 off=251451 g=85 seq=230)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1527129030 GoStart p=7 g=85 off=251554 g=85 seq=0 (from 1524317449 GoUnblock p=7 g=131185 off=251451 g=85 seq=230)
+1527135856 GoBlockSelect p=7 g=85 off=251557 (to 1541810415 GoUnblock p=15 g=130234 off=842526 g=85 seq=232)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1543484043 GoStart p=15 g=85 off=842617 g=85 seq=0 (from 1541810415 GoUnblock p=15 g=130234 off=842526 g=85 seq=232)
+1543498635 GoUnblock p=15 g=85 off=842621 g=141 seq=2 (from 20010 GoWaiting p=1 g=141 off=270998 g=141, to 1543509579 GoStart p=15 g=141 off=842633 g=141 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1543507488 GoBlockSelect p=15 g=85 off=842629 (to 1557390651 GoUnblock p=8 g=131637 off=187814 g=85 seq=234)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1558949763 GoStart p=8 g=85 off=187878 g=85 seq=0 (from 1557390651 GoUnblock p=8 g=131637 off=187814 g=85 seq=234)
+1558956909 GoBlockSelect p=8 g=85 off=187882 (to 1577845532 GoUnblock p=15 g=131131 off=843702 g=85 seq=236)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1579094609 GoStart p=15 g=85 off=843886 g=85 seq=0 (from 1577845532 GoUnblock p=15 g=131131 off=843702 g=85 seq=236)
+1579099068 GoBlockSelect p=15 g=85 off=843890 (to 1586495909 GoUnblock p=12 g=131021 off=713022 g=85 seq=238)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1588258753 GoStart p=12 g=85 off=713102 g=85 seq=0 (from 1586495909 GoUnblock p=12 g=131021 off=713022 g=85 seq=238)
+1588262657 GoUnblock p=12 g=85 off=713106 g=201 seq=2 (from 30869 GoWaiting p=1 g=201 off=271671 g=201, to 1588289408 GoStart p=12 g=201 off=713118 g=201 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1588287232 GoBlockSelect p=12 g=85 off=713114 (to 1614702232 GoUnblock p=15 g=131545 off=845138 g=85 seq=240)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1616754565 GoStart p=15 g=85 off=845342 g=85 seq=0 (from 1614702232 GoUnblock p=15 g=131545 off=845138 g=85 seq=240)
+1616762928 GoUnblock p=15 g=85 off=845346 g=46 seq=2 (from 14143 GoWaiting p=1 g=46 off=270692 g=46, to 1616789680 GoStart p=15 g=46 off=845357 g=46 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1616786736 GoBlockSelect p=15 g=85 off=845353 (to 1617779047 GoUnblock p=2 g=132301 off=307449 g=85 seq=242)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1634047362 GoStart p=2 g=85 off=308011 g=85 seq=0 (from 1617779047 GoUnblock p=2 g=132301 off=307449 g=85 seq=242)
+1634054338 GoBlockSelect p=2 g=85 off=308015 (to 1648343343 GoUnblock p=9 g=130416 off=553564 g=85 seq=244)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1649209298 GoStart p=9 g=85 off=553665 g=85 seq=0 (from 1648343343 GoUnblock p=9 g=130416 off=553564 g=85 seq=244)
+1649213565 GoUnblock p=9 g=85 off=553669 g=154 seq=2 (from 22527 GoWaiting p=1 g=154 off=271154 g=154, to 1649237501 GoStart p=9 g=154 off=553681 g=154 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1649235325 GoBlockSelect p=9 g=85 off=553677 (to 1677322096 GoUnblock p=12 g=131047 off=714904 g=85 seq=246)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1679055691 GoStart p=12 g=85 off=715052 g=85 seq=0 (from 1677322096 GoUnblock p=12 g=131047 off=714904 g=85 seq=246)
+1679064075 GoUnblock p=12 g=85 off=715055 g=176 seq=2 (from 26495 GoWaiting p=1 g=176 off=271396 g=176, to 1679098166 GoStart p=12 g=176 off=715067 g=176 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1679096054 GoBlockSelect p=12 g=85 off=715063 (to 1692781245 GoUnblock p=9 g=131274 off=555154 g=85 seq=248)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1695965814 GoStart p=9 g=85 off=555323 g=85 seq=0 (from 1692781245 GoUnblock p=9 g=131274 off=555154 g=85 seq=248)
+1695983606 GoUnblock p=9 g=85 off=555327 g=114 seq=2 (from 14954 GoWaiting p=1 g=114 off=270728 g=114, to 1695995830 GoStart p=9 g=114 off=555338 g=114 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1695993739 GoBlockSelect p=9 g=85 off=555334 (to 1704183299 GoUnblock p=9 g=130919 off=555521 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1726642472 GoStart p=9 g=85 off=555798 g=85 seq=0 (from 1704183299 GoUnblock p=9 g=130919 off=555521 g=85 seq=0)
+1726650728 GoUnblock p=9 g=85 off=555802 g=44 seq=2 (from 13290 GoWaiting p=1 g=44 off=270665 g=44, to 1726664936 GoStart p=9 g=44 off=555813 g=44 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1726662781 GoBlockSelect p=9 g=85 off=555809 (to 1727777971 GoUnblock p=6 g=131950 off=450987 g=85 seq=252)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1741442427 GoStart p=6 g=85 off=451428 g=85 seq=0 (from 1727777971 GoUnblock p=6 g=131950 off=450987 g=85 seq=252)
+1741448486 GoUnblock p=6 g=85 off=451432 g=134 seq=2 (from 18794 GoWaiting p=1 g=134 off=270921 g=134, to 1741479099 GoStart p=6 g=134 off=451444 g=134 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1741476731 GoBlockSelect p=6 g=85 off=451440 (to 1746095719 GoUnblock p=12 g=130673 off=717315 g=85 seq=254)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1747145651 GoStart p=12 g=85 off=717502 g=85 seq=0 (from 1746095719 GoUnblock p=12 g=130673 off=717315 g=85 seq=254)
+1747164744 GoUnblock p=12 g=85 off=717506 g=191 seq=2 (from 29397 GoWaiting p=1 g=191 off=271561 g=191, to 1747175262 GoStart p=12 g=191 off=717518 g=191 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1747173214 GoBlockSelect p=12 g=85 off=717514 (to 1754725211 GoUnblock p=3 g=133243 off=334297 g=85 seq=256)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1762139418 GoStart p=3 g=85 off=334752 g=85 seq=0 (from 1754725211 GoUnblock p=3 g=133243 off=334297 g=85 seq=256)
+1762149018 GoUnblock p=3 g=85 off=334755 g=165 seq=2 (from 24106 GoWaiting p=1 g=165 off=271275 g=165, to 1762161071 GoStart p=3 g=165 off=334767 g=165 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1762158916 GoBlockSelect p=3 g=85 off=334763 (to 1768649910 GoUnblock p=10 g=131114 off=598218 g=85 seq=258)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1783020855 GoStart p=10 g=85 off=599269 g=85 seq=0 (from 1768649910 GoUnblock p=10 g=131114 off=598218 g=85 seq=258)
+1783039970 GoUnblock p=10 g=85 off=599273 g=162 seq=2 (from 23701 GoWaiting p=1 g=162 off=271242 g=162, to 1783051340 GoStart p=10 g=162 off=599285 g=162 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1783049356 GoBlockSelect p=10 g=85 off=599281 (to 1787112147 GoUnblock p=6 g=130158 off=452905 g=85 seq=260)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1828034411 GoStart p=6 g=85 off=454752 g=85 seq=0 (from 1787112147 GoUnblock p=6 g=130158 off=452905 g=85 seq=260)
+1828050965 GoUnblock p=6 g=85 off=454756 g=145 seq=2 (from 20821 GoWaiting p=1 g=145 off=271042 g=145, to 1828841977 GoStart p=6 g=145 off=454818 g=145 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1828071850 GoUnblock p=6 g=85 off=454764 g=136 seq=2 (from 19029 GoWaiting p=1 g=136 off=270943 g=136, to 1828078976 GoStart p=6 g=136 off=454776 g=136 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1828076842 GoBlockSelect p=6 g=85 off=454772 (to 1837136624 GoUnblock p=15 g=131156 off=855125 g=85 seq=262)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1837526018 GoStart p=15 g=85 off=855244 g=85 seq=0 (from 1837136624 GoUnblock p=15 g=131156 off=855125 g=85 seq=262)
+1837543404 GoUnblock p=15 g=85 off=855247 g=177 seq=2 (from 26602 GoWaiting p=1 g=177 off=271407 g=177, to 1837937043 GoStart p=15 g=177 off=855412 g=177 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1837551809 GoBlockSelect p=15 g=85 off=855255 (to 1837616150 GoUnblock p=3 g=130870 off=337620 g=85 seq=264)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1841516809 GoStart p=3 g=85 off=338096 g=85 seq=0 (from 1837616150 GoUnblock p=3 g=130870 off=337620 g=85 seq=264)
+1841533129 GoUnblock p=3 g=85 off=338100 g=170 seq=2 (from 25365 GoWaiting p=1 g=170 off=271330 g=170, to 1841548596 GoStart p=3 g=170 off=338112 g=170 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1841545972 GoBlockSelect p=3 g=85 off=338108 (to 1846713563 GoUnblock p=6 g=130887 off=456038 g=85 seq=266)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865276579 GoStart p=6 g=85 off=456534 g=85 seq=0 (from 1846713563 GoUnblock p=6 g=130887 off=456038 g=85 seq=266)
+1865283640 GoUnblock p=6 g=85 off=456538 g=137 seq=2 (from 19114 GoWaiting p=1 g=137 off=270954 g=137, to 1873632324 GoStart p=6 g=137 off=456749 g=137 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865288888 GCMarkAssistStart p=6 g=85 off=456546
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865702495 GCMarkAssistDone p=6 g=85 off=456551
+1865704393 HeapAlloc p=6 g=85 off=456555 mem=13480486936
+1865717108 GoUnblock p=6 g=85 off=456562 g=168 seq=2 (from 24426 GoWaiting p=1 g=168 off=271308 g=168, to 1883410883 GoStart p=6 g=168 off=457053 g=168 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865737630 GoUnblock p=6 g=85 off=456570 g=171 seq=2 (from 25514 GoWaiting p=1 g=171 off=271341 g=171, to 1892280095 GoStart p=6 g=171 off=457194 g=171 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865747209 GoUnblock p=6 g=85 off=456578 g=166 seq=2 (from 24213 GoWaiting p=1 g=166 off=271286 g=166, to 1865760628 GoStart p=6 g=166 off=456590 g=166 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1865758132 GoBlockSelect p=6 g=85 off=456586 (to 1870881180 GoUnblock p=15 g=130083 off=858225 g=85 seq=268)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1871378434 GoStart p=15 g=85 off=858313 g=85 seq=0 (from 1870881180 GoUnblock p=15 g=130083 off=858225 g=85 seq=268)
+1871384578 GoUnblock p=15 g=85 off=858317 g=48 seq=2 (from 14442 GoWaiting p=1 g=48 off=270710 g=48, to 1871405719 GoStart p=15 g=48 off=858328 g=48 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1871403693 GoBlockSelect p=15 g=85 off=858324 (to 1877489548 GoUnblock p=15 g=130809 off=858683 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1880474951 GoStart p=15 g=85 off=858992 g=85 seq=0 (from 1877489548 GoUnblock p=15 g=130809 off=858683 g=85 seq=0)
+1880513010 GoUnblock p=15 g=85 off=858996 g=138 seq=2 (from 19242 GoWaiting p=1 g=138 off=270965 g=138, to 1880523825 GoStart p=15 g=138 off=859008 g=138 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1880521607 GoBlockSelect p=15 g=85 off=859004 (to 1915847312 GoUnblock p=11 g=130099 off=670892 g=85 seq=272)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1916646067 GoStart p=11 g=85 off=671005 g=85 seq=0 (from 1915847312 GoUnblock p=11 g=130099 off=670892 g=85 seq=272)
+1916653299 GoBlockSelect p=11 g=85 off=671008 (to 1928959537 GoUnblock p=9 g=131600 off=561195 g=85 seq=274)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1930440420 GoStart p=9 g=85 off=561279 g=85 seq=0 (from 1928959537 GoUnblock p=9 g=131600 off=561195 g=85 seq=274)
+1930460218 GoUnblock p=9 g=85 off=561283 g=161 seq=2 (from 23551 GoWaiting p=1 g=161 off=271231 g=161, to 1930470265 GoStart p=9 g=161 off=561295 g=161 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1930467833 GoBlockSelect p=9 g=85 off=561291 (to 1942077267 GoUnblock p=6 g=131031 off=459467 g=85 seq=276)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1945516810 GoStart p=6 g=85 off=459870 g=85 seq=0 (from 1942077267 GoUnblock p=6 g=131031 off=459467 g=85 seq=276)
+1945531061 GoBlockSelect p=6 g=85 off=459874 (to 1947928928 GoUnblock p=12 g=131527 off=725403 g=85 seq=278)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1950587443 GoStart p=12 g=85 off=725627 g=85 seq=0 (from 1947928928 GoUnblock p=12 g=131527 off=725403 g=85 seq=278)
+1950598856 GoBlockSelect p=12 g=85 off=725630 (to 1967491635 GoUnblock p=11 g=10110661 off=673198 g=85 seq=280)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1973171009 GoStart p=11 g=85 off=673529 g=85 seq=0 (from 1967491635 GoUnblock p=11 g=10110661 off=673198 g=85 seq=280)
+1973176172 GoUnblock p=11 g=85 off=673533 g=147 seq=2 (from 21055 GoWaiting p=1 g=147 off=271064 g=147, to 1973199873 GoStart p=11 g=147 off=673545 g=147 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1973197014 GoBlockSelect p=11 g=85 off=673541 (to 1981813770 GoUnblock p=6 g=131561 off=462132 g=85 seq=282)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1983272147 GoStart p=6 g=85 off=462482 g=85 seq=0 (from 1981813770 GoUnblock p=6 g=131561 off=462132 g=85 seq=282)
+1983276734 GoUnblock p=6 g=85 off=462486 g=125 seq=2 (from 16959 GoWaiting p=1 g=125 off=270827 g=125, to 1983304445 GoStart p=6 g=125 off=462497 g=125 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1983301971 GoBlockSelect p=6 g=85 off=462493 (to 1983931874 GoUnblock p=14 g=131530 off=814602 g=85 seq=284)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1988923724 GoStart p=14 g=85 off=814788 g=85 seq=0 (from 1983931874 GoUnblock p=14 g=131530 off=814602 g=85 seq=284)
+1988931041 GoBlockSelect p=14 g=85 off=814792 (to 1988957899 GoUnblock p=12 g=131700 off=728083 g=85 seq=286)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1993104380 GoStart p=12 g=85 off=728437 g=85 seq=0 (from 1988957899 GoUnblock p=12 g=131700 off=728083 g=85 seq=286)
+1993107644 GoUnblock p=12 g=85 off=728441 g=142 seq=2 (from 20202 GoWaiting p=1 g=142 off=271009 g=142, to 1993133500 GoStart p=12 g=142 off=728453 g=142 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1993131324 GoBlockSelect p=12 g=85 off=728449 (to 1996860934 GoUnblock p=8 g=130731 off=505315 g=85 seq=288)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1997287149 GoStart p=8 g=85 off=505340 g=85 seq=0 (from 1996860934 GoUnblock p=8 g=130731 off=505315 g=85 seq=288)
+1997289773 GoBlockSelect p=8 g=85 off=505344 (to 2007825723 GoUnblock p=3 g=131005 off=346002 g=85 seq=290)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2008877916 GoStart p=3 g=85 off=346160 g=85 seq=0 (from 2007825723 GoUnblock p=3 g=131005 off=346002 g=85 seq=290)
+2008884721 GoUnblock p=3 g=85 off=346164 g=178 seq=2 (from 26709 GoWaiting p=1 g=178 off=271418 g=178, to 2008896753 GoStart p=3 g=178 off=346176 g=178 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2008894812 GoBlockSelect p=3 g=85 off=346172 (to 2018169418 GoUnblock p=9 g=131373 off=563494 g=85 seq=292)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2023151881 GoStart p=9 g=85 off=563686 g=85 seq=0 (from 2018169418 GoUnblock p=9 g=131373 off=563494 g=85 seq=292)
+2023159027 GoUnblock p=9 g=85 off=563689 g=143 seq=2 (from 20458 GoWaiting p=1 g=143 off=271020 g=143, to 2023170953 GoStart p=9 g=143 off=563701 g=143 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2023168883 GoBlockSelect p=9 g=85 off=563697 (to 2030434398 GoUnblock p=13 g=133001 off=772708 g=85 seq=294)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2041361384 GoStart p=13 g=85 off=773042 g=85 seq=0 (from 2030434398 GoUnblock p=13 g=133001 off=772708 g=85 seq=294)
+2041377150 GoUnblock p=13 g=85 off=773046 g=140 seq=2 (from 19455 GoWaiting p=1 g=140 off=270987 g=140, to 2042764039 GoStart p=13 g=140 off=773067 g=140 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2041381459 GCMarkAssistStart p=13 g=85 off=773054
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2042741810 GCMarkAssistDone p=13 g=85 off=773059
+2042758343 GoBlockSelect p=13 g=85 off=773063 (to 2046739812 GoUnblock p=8 g=131328 off=508435 g=85 seq=296)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2058239977 GoStart p=8 g=85 off=509040 g=85 seq=0 (from 2046739812 GoUnblock p=8 g=131328 off=508435 g=85 seq=296)
+2058247700 GoUnblock p=8 g=85 off=509043 g=175 seq=2 (from 26389 GoWaiting p=1 g=175 off=271385 g=175, to 2058267582 GoStart p=8 g=175 off=509055 g=175 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2058265683 GoBlockSelect p=8 g=85 off=509051 (to 2059894768 GoUnblock p=13 g=132207 off=773583 g=85 seq=298)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2067485378 GoStart p=13 g=85 off=773826 g=85 seq=0 (from 2059894768 GoUnblock p=13 g=132207 off=773583 g=85 seq=298)
+2067489794 GoUnblock p=13 g=85 off=773830 g=200 seq=2 (from 30719 GoWaiting p=1 g=200 off=271660 g=200, to 2067609196 GoStart p=13 g=200 off=773949 g=200 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2067517677 GoUnblock p=13 g=85 off=773838 g=181 seq=2 (from 27647 GoWaiting p=1 g=181 off=271451 g=181, to 2072423511 GoStart p=13 g=181 off=774062 g=181 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2067521431 HeapAlloc p=13 g=85 off=773846 mem=13521107320
+2067525677 GoBlockSelect p=13 g=85 off=773854 (to 2074027614 GoUnblock p=6 g=131095 off=466041 g=85 seq=300)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2075330770 GoStart p=6 g=85 off=466139 g=85 seq=0 (from 2074027614 GoUnblock p=6 g=131095 off=466041 g=85 seq=300)
+2075336253 GoBlockSelect p=6 g=85 off=466143 (to 2077886673 GoUnblock p=7 g=131202 off=487457 g=85 seq=302)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2079294533 GoStart p=7 g=85 off=487639 g=85 seq=0 (from 2077886673 GoUnblock p=7 g=131202 off=487457 g=85 seq=302)
+2079300826 GoUnblock p=7 g=85 off=487643 g=135 seq=2 (from 18901 GoWaiting p=1 g=135 off=270932 g=135, to 2079311258 GoStart p=7 g=135 off=487655 g=135 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2079308997 GoBlockSelect p=7 g=85 off=487651 (to 2080126718 GoUnblock p=9 g=130824 off=567974 g=85 seq=304)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2081363165 GoStart p=9 g=85 off=568236 g=85 seq=0 (from 2080126718 GoUnblock p=9 g=130824 off=567974 g=85 seq=304)
+2081376179 GoBlockSelect p=9 g=85 off=568239 (to 2090234724 GoUnblock p=7 g=132223 off=488693 g=85 seq=306)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2091847020 GoStart p=7 g=85 off=488905 g=85 seq=0 (from 2090234724 GoUnblock p=7 g=132223 off=488693 g=85 seq=306)
+2091862763 GoUnblock p=7 g=85 off=488909 g=192 seq=2 (from 29482 GoWaiting p=1 g=192 off=271572 g=192, to 2091875158 GoStart p=7 g=192 off=488921 g=192 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2091873089 GoBlockSelect p=7 g=85 off=488917 (to 2095529504 GoUnblock p=8 g=132741 off=511001 g=85 seq=308)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2096934527 GoStart p=8 g=85 off=511155 g=85 seq=0 (from 2095529504 GoUnblock p=8 g=132741 off=511001 g=85 seq=308)
+2096940564 GoUnblock p=8 g=85 off=511158 g=206 seq=2 (from 31402 GoWaiting p=1 g=206 off=271726 g=206, to 2096950057 GoStart p=8 g=206 off=511170 g=206 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2096947839 GoBlockSelect p=8 g=85 off=511166 (to 2104471314 GoUnblock p=8 g=131062 off=511629 g=85 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2105786395 GoStart p=8 g=85 off=511766 g=85 seq=0 (from 2104471314 GoUnblock p=8 g=131062 off=511629 g=85 seq=0)
+2105803910 GoBlockSelect p=8 g=85 off=511769 (to 2137253937 GoUnblock p=4 g=131920 off=387303 g=85 seq=312)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2150967224 GoStart p=4 g=85 off=387761 g=85 seq=0 (from 2137253937 GoUnblock p=4 g=131920 off=387303 g=85 seq=312)
+2150974776 GoUnblock p=4 g=85 off=387764 g=163 seq=2 (from 23786 GoWaiting p=1 g=163 off=271253 g=163, to 2153761610 GoStart p=4 g=163 off=387913 g=163 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2150992525 GoUnblock p=4 g=85 off=387772 g=155 seq=2 (from 22613 GoWaiting p=1 g=155 off=271165 g=155, to 2151010786 GoStart p=4 g=155 off=387784 g=155 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2151008333 GoBlockSelect p=4 g=85 off=387780 (to 2152916860 GoUnblock p=6 g=132118 off=468716 g=85 seq=314)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2154101255 GoStart p=6 g=85 off=468779 g=85 seq=0 (from 2152916860 GoUnblock p=6 g=132118 off=468716 g=85 seq=314)
+2154107698 GoUnblock p=6 g=85 off=468783 g=160 seq=2 (from 23317 GoWaiting p=1 g=160 off=271220 g=160, to 2154132785 GoStart p=6 g=160 off=468795 g=160 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2154118087 GoBlockSelect p=6 g=85 off=468791 (to 2171845483 GoUnblock p=8 g=130785 off=515097 g=85 seq=316)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2172044222 GoStart p=8 g=85 off=515207 g=85 seq=0 (from 2171845483 GoUnblock p=8 g=130785 off=515097 g=85 seq=316)
+2172048553 GoBlockSelect p=8 g=85 off=515211 (to 2173579249 GoUnblock p=1 g=131000 off=298375 g=85 seq=318)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2173669211 GoStart p=1 g=85 off=298430 g=85 seq=0 (from 2173579249 GoUnblock p=1 g=131000 off=298375 g=85 seq=318)
+2173673115 GoBlockSelect p=1 g=85 off=298434 (to 2175302092 GoUnblock p=4 g=130829 off=392106 g=85 seq=320)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2177547769 GoStart p=4 g=85 off=392898 g=85 seq=0 (from 2175302092 GoUnblock p=4 g=130829 off=392106 g=85 seq=320)
+2177551566 GoUnblock p=4 g=85 off=392902 g=47 seq=2 (from 14335 GoWaiting p=1 g=47 off=270701 g=47, to 2177563598 GoStart p=4 g=47 off=392921 g=47 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+2177556558 HeapAlloc p=4 g=85 off=392909 mem=6839809816
+2177561315 GoBlockSelect p=4 g=85 off=392917 (to 2177707404 GoUnblock p=15 g=132663 off=872580 g=85 seq=322)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1

@@ -1,0 +1,98 @@
+703551804 GoStart p=13 g=680531542 off=1077044 g=680531542 seq=0 (from 703525969 GoCreate p=13 g=680533090 off=1076997 g=680531542 stack=19)
+  714420 net/http.(*persistConn).readLoop net/http/transport.go:2008
+703558545 GoSysCall p=13 g=680531542 off=1077052
+  4859d9 syscall.read syscall/zsyscall_linux_amd64.go:686
+  4e3d2b syscall.Read syscall/syscall_unix.go:187
+  4e3cfd internal/poll.(*FD).Read.func1 internal/poll/fd_unix.go:155
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4de8bd internal/poll.(*FD).Read internal/poll/fd_unix.go:155
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  631161 crypto/tls.(*atLeastReader).Read crypto/tls/conn.go:779
+  5006f0 bytes.(*Buffer).ReadFrom bytes/buffer.go:204
+  6313b2 crypto/tls.(*Conn).readFromUntil crypto/tls/conn.go:801
+  62e1d4 crypto/tls.(*Conn).readRecordOrCCS crypto/tls/conn.go:608
+  63449e crypto/tls.(*Conn).readRecord crypto/tls/conn.go:576
+  6344a9 crypto/tls.(*Conn).Read crypto/tls/conn.go:1252
+  713916 net/http.(*persistConn).Read net/http/transport.go:1890
+  57f844 bufio.(*Reader).fill bufio/bufio.go:101
+  57f9ae bufio.(*Reader).Peek bufio/bufio.go:139
+  7145c7 net/http.(*persistConn).readLoop net/http/transport.go:2043
+703563772 GoBlockNet p=13 g=680531542 off=1077057 (to 745908644 GoUnblock p=1000002 g=0 off=450060 g=680531542 seq=2)
+  4de902 internal/poll.(*FD).Read internal/poll/fd_unix.go:159
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  631161 crypto/tls.(*atLeastReader).Read crypto/tls/conn.go:779
+  5006f0 bytes.(*Buffer).ReadFrom bytes/buffer.go:204
+  6313b2 crypto/tls.(*Conn).readFromUntil crypto/tls/conn.go:801
+  62e1d4 crypto/tls.(*Conn).readRecordOrCCS crypto/tls/conn.go:608
+  63449e crypto/tls.(*Conn).readRecord crypto/tls/conn.go:576
+  6344a9 crypto/tls.(*Conn).Read crypto/tls/conn.go:1252
+  713916 net/http.(*persistConn).Read net/http/transport.go:1890
+  57f844 bufio.(*Reader).fill bufio/bufio.go:101
+  57f9ae bufio.(*Reader).Peek bufio/bufio.go:139
+  7145c7 net/http.(*persistConn).readLoop net/http/transport.go:2043
+745908964 GoStart p=3 g=680531542 off=450070 g=680531542 seq=0 (from 745908644 GoUnblock p=1000002 g=0 off=450060 g=680531542 seq=2)
+745909754 GoSysCall p=3 g=680531542 off=450077
+  4859d9 syscall.read syscall/zsyscall_linux_amd64.go:686
+  4e3d2b syscall.Read syscall/syscall_unix.go:187
+  4e3cfd internal/poll.(*FD).Read.func1 internal/poll/fd_unix.go:155
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4de8bd internal/poll.(*FD).Read internal/poll/fd_unix.go:155
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  631161 crypto/tls.(*atLeastReader).Read crypto/tls/conn.go:779
+  5006f0 bytes.(*Buffer).ReadFrom bytes/buffer.go:204
+  6313b2 crypto/tls.(*Conn).readFromUntil crypto/tls/conn.go:801
+  62e1d4 crypto/tls.(*Conn).readRecordOrCCS crypto/tls/conn.go:608
+  63449e crypto/tls.(*Conn).readRecord crypto/tls/conn.go:576
+  6344a9 crypto/tls.(*Conn).Read crypto/tls/conn.go:1252
+  713916 net/http.(*persistConn).Read net/http/transport.go:1890
+  57f844 bufio.(*Reader).fill bufio/bufio.go:101
+  57f9ae bufio.(*Reader).Peek bufio/bufio.go:139
+  7145c7 net/http.(*persistConn).readLoop net/http/transport.go:2043
+745934948 GoUnblock p=3 g=680531542 off=450081 g=680531392 seq=6 (from 703656978 GoBlockSelect p=13 g=680531392 off=1077104, to 745939343 GoStart p=3 g=680531392 off=450098 g=680531392 seq=0)
+  44a17e runtime.selectgo runtime/select.go:503
+  714cb3 net/http.(*persistConn).readLoop net/http/transport.go:2154
+745937850 GoBlockSelect p=3 g=680531542 off=450093 (to 745965071 GoUnblock p=3 g=680531392 off=450105 g=680531542 seq=0)
+  44a58e runtime.selectgo runtime/select.go:338
+  714dcb net/http.(*persistConn).readLoop net/http/transport.go:2163
+745974628 GoStart p=3 g=680531542 off=450120 g=680531542 seq=0 (from 745965071 GoUnblock p=3 g=680531392 off=450105 g=680531542 seq=0)
+745976890 GoUnblock p=3 g=680531542 off=450128 g=680531392 seq=0 (from 745971492 GoBlockRecv p=3 g=680531392 off=450115, to 745998692 GoStart p=14 g=680531392 off=622032 g=680531392 seq=9)
+  4058b4 runtime.chansend1 runtime/chan.go:143
+  714f6c net/http.(*persistConn).readLoop net/http/transport.go:2172
+745980644 GoSysCall p=3 g=680531542 off=450137
+  485bd9 syscall.write syscall/zsyscall_linux_amd64.go:914
+  4e3dd6 syscall.Write syscall/syscall_unix.go:212
+  4e3d81 internal/poll.(*FD).Write.func1 internal/poll/fd_unix.go:267
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4df61b internal/poll.(*FD).Write internal/poll/fd_unix.go:267
+  5cad2e net.(*netFD).Write net/fd_posix.go:73
+  5dec4d net.(*conn).Write net/net.go:194
+  631ba1 crypto/tls.(*Conn).write crypto/tls/conn.go:914
+  631fc4 crypto/tls.(*Conn).writeRecordLocked crypto/tls/conn.go:963
+  6314ab crypto/tls.(*Conn).sendAlertLocked crypto/tls/conn.go:815
+  63499d crypto/tls.(*Conn).closeNotify crypto/tls/conn.go:1334
+  6347ed crypto/tls.(*Conn).Close crypto/tls/conn.go:1307
+  717b0d net/http.(*persistConn).closeLocked net/http/transport.go:2663
+  717984 net/http.(*persistConn).close net/http/transport.go:2648
+  71e5c4 net/http.(*persistConn).readLoop.func1 net/http/transport.go:2011
+  7156f7 net/http.(*persistConn).readLoop net/http/transport.go:2186
+746003450 GoSysCall p=3 g=680531542 off=450142
+  485164 syscall.Close syscall/zsyscall_linux_amd64.go:285
+  4de4c2 internal/poll.(*FD).destroy internal/poll/fd_unix.go:77
+  4dd4e4 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4de58e internal/poll.(*FD).Close internal/poll/fd_unix.go:99
+  5ca74e net.(*netFD).Close net/fd_posix.go:37
+  5dedfd net.(*conn).Close net/net.go:206
+  6347a3 crypto/tls.(*Conn).Close crypto/tls/conn.go:1310
+  717b0d net/http.(*persistConn).closeLocked net/http/transport.go:2663
+  717984 net/http.(*persistConn).close net/http/transport.go:2648
+  71e5c4 net/http.(*persistConn).readLoop.func1 net/http/transport.go:2011
+  7156f7 net/http.(*persistConn).readLoop net/http/transport.go:2186
+746016911 GoUnblock p=3 g=680531542 off=450147 g=680531543 seq=2 (from 703653991 GoBlockSelect p=13 g=680531543 off=1077094, to 746025359 GoStart p=3 g=680531543 off=450162 g=680531543 seq=0)
+  717b25 net/http.(*persistConn).closeLocked net/http/transport.go:2665
+  717984 net/http.(*persistConn).close net/http/transport.go:2648
+  71e5c4 net/http.(*persistConn).readLoop.func1 net/http/transport.go:2011
+  7156f7 net/http.(*persistConn).readLoop net/http/transport.go:2186
+746024612 GoEnd p=3 g=680531542 off=450159

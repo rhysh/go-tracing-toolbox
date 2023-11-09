@@ -1,0 +1,28 @@
+1190819204 GoStart p=8 g=67059315 off=175460 g=67059315 seq=0 (from 1186221911 GoCreate p=8 g=130809 off=175184 g=67059315 stack=30)
+  72c600 net/http.(*connReader).backgroundRead net/http/server.go:671
+1190820420 GoSysCall p=8 g=67059315 off=175467
+  4bc42c syscall.read syscall/zsyscall_linux_amd64.go:696
+  4d7544 syscall.Read syscall/syscall_unix.go:188
+  4d752c internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d72e4 internal/poll.(*FD).Read internal/poll/fd_unix.go:163
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  72c63e net/http.(*connReader).backgroundRead net/http/server.go:672
+1190824985 GoBlockNet p=8 g=67059315 off=175470 (to 1877586806 GoUnblock p=1000002 g=130809 off=858692 g=67059315 seq=2)
+  4d7507 internal/poll.(*FD).Read internal/poll/fd_unix.go:167
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  72c63e net/http.(*connReader).backgroundRead net/http/server.go:672
+1877595041 GoStart p=15 g=67059315 off=858706 g=67059315 seq=0 (from 1877586806 GoUnblock p=1000002 g=130809 off=858692 g=67059315 seq=2)
+1877596043 GCMarkAssistStart p=15 g=67059315 off=858713
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  645ad3 net.(*conn).Read net/net.go:185
+  72c63e net/http.(*connReader).backgroundRead net/http/server.go:672
+1878402202 GCMarkAssistDone p=15 g=67059315 off=858717
+1878406255 GoUnblock p=15 g=67059315 off=858721 g=130809 seq=0 (from 1877591883 GoBlockCond p=15 g=130809 off=858702, to 1878410863 GoStart p=15 g=130809 off=858731 g=130809 seq=0)
+  472ef6 sync.(*Cond).Broadcast sync/cond.go:75
+  72c6fe net/http.(*connReader).backgroundRead net/http/server.go:708
+1878409668 GoEnd p=15 g=67059315 off=858728

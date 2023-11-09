@@ -1,0 +1,65 @@
+1331931880 GoStart p=2 g=67059295 off=302875 g=67059295 seq=0 (from 1316998145 GoCreate p=2 g=130809 off=64296 g=67059295 stack=33)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1331948563 HeapAlloc p=2 g=67059295 off=302882 mem=13411603488
+1331975955 HeapAlloc p=2 g=67059295 off=302890 mem=13411606880
+1331977427 GCMarkAssistStart p=2 g=67059295 off=302898
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1332268816 GCMarkAssistDone p=2 g=67059295 off=302902
+1332303952 GCMarkAssistStart p=2 g=67059295 off=302905
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1332749238 GCMarkAssistDone p=2 g=67059295 off=302910
+1332779915 HeapAlloc p=2 g=67059295 off=302914 mem=13411684880
+1332787041 GCMarkAssistStart p=2 g=67059295 off=302922
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  414e69 runtime.newobject runtime/malloc.go:1259
+  414e54 runtime.mapassign_faststr runtime/map_faststr.go:221
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1333219421 GCMarkAssistDone p=2 g=67059295 off=302927
+1333254834 GCMarkAssistStart p=2 g=67059295 off=302931
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  414e69 runtime.newobject runtime/malloc.go:1259
+  414e54 runtime.mapassign_faststr runtime/map_faststr.go:221
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1334186196 GCMarkAssistDone p=2 g=67059295 off=302936
+1334207082 GoEnd p=2 g=67059295 off=302940

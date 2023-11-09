@@ -1,0 +1,99 @@
+1927890000 GoStart p=12 g=67059950 off=725015 g=67059950 seq=0 (from 1927884518 GoCreate p=12 g=67059948 off=724999 g=67059950 stack=1114)
+  631ae0 net.(*Resolver).goLookupIPCNAMEOrder.func3.2 net/dnsclient_unix.go:611
+1927895696 GCMarkAssistStart p=12 g=67059950 off=725022
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  4536c9 runtime.rawbyteslice runtime/string.go:286
+  45302a runtime.stringtoslicebyte runtime/string.go:178
+  62e3ac vendor/golang.org/x/net/dns/dnsmessage.NewName vendor/golang.org/x/net/dns/dnsmessage/message.go:1889
+  62e37f net.(*Resolver).tryOneName net/dnsclient_unix.go:246
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1928134009 GCMarkAssistDone p=12 g=67059950 off=725027
+1928140814 HeapAlloc p=12 g=67059950 off=725030 mem=13491098144
+1928146595 HeapAlloc p=12 g=67059950 off=725038 mem=13491106336
+1928177400 GoSysCall p=12 g=67059950 off=725046
+  4bdb6b syscall.setsockopt syscall/zsyscall_linux_amd64.go:1481
+  64c032 syscall.SetsockoptInt syscall/syscall_unix.go:427
+  64c03c net.setDefaultSockopts net/sockopt_linux.go:21
+  64a778 net.socket net/sock_posix.go:23
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  629bd3 net.(*sysDialer).dialSingle net/dial.go:586
+  6294b1 net.(*sysDialer).dialSerial net/dial.go:551
+  628335 net.(*Dialer).DialContext net/dial.go:428
+  643264 net.(*Resolver).dial net/lookup_unix.go:70
+  62d404 net.(*Resolver).exchange net/dnsclient_unix.go:160
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1928187640 GoSysCall p=12 g=67059950 off=725051
+  4bd73a syscall.connect syscall/zsyscall_linux_amd64.go:1435
+  4ba46f syscall.Connect syscall/syscall_unix.go:269
+  634f03 net.(*netFD).connect net/fd_unix.go:59
+  64ae33 net.(*netFD).dial net/sock_posix.go:149
+  64a991 net.socket net/sock_posix.go:70
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  629bd3 net.(*sysDialer).dialSingle net/dial.go:586
+  6294b1 net.(*sysDialer).dialSerial net/dial.go:551
+  628335 net.(*Dialer).DialContext net/dial.go:428
+  643264 net.(*Resolver).dial net/lookup_unix.go:70
+  62d404 net.(*Resolver).exchange net/dnsclient_unix.go:160
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1928213389 GoSysCall p=12 g=67059950 off=725056
+  4bc70c syscall.write syscall/zsyscall_linux_amd64.go:924
+  4d956d syscall.Write syscall/syscall_unix.go:216
+  4d955f internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d923d internal/poll.(*FD).Write internal/poll/fd_unix.go:383
+  634468 net.(*netFD).Write net/fd_posix.go:96
+  645c44 net.(*conn).Write net/net.go:195
+  62c17d net.dnsPacketRoundTrip net/dnsclient_unix.go:85
+  62d5c7 net.(*Resolver).exchange net/dnsclient_unix.go:170
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1928226595 GoSysCall p=12 g=67059950 off=725061
+  4bc42c syscall.read syscall/zsyscall_linux_amd64.go:696
+  4d7544 syscall.Read syscall/syscall_unix.go:188
+  4d752c internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d72e4 internal/poll.(*FD).Read internal/poll/fd_unix.go:163
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  62c27c net.dnsPacketRoundTrip net/dnsclient_unix.go:91
+  62d5c7 net.(*Resolver).exchange net/dnsclient_unix.go:170
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1928239245 GoBlockNet p=12 g=67059950 off=725066 (to 1935943988 GoUnblock p=1000002 g=0 off=878894 g=67059950 seq=2)
+  4d7507 internal/poll.(*FD).Read internal/poll/fd_unix.go:167
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  62c27c net.dnsPacketRoundTrip net/dnsclient_unix.go:91
+  62d5c7 net.(*Resolver).exchange net/dnsclient_unix.go:170
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1966456508 GoStart p=3 g=67059950 off=342962 g=67059950 seq=3 (from 1935943988 GoUnblock p=1000002 g=0 off=878894 g=67059950 seq=2)
+1966457404 GoSysCall p=3 g=67059950 off=342969
+  4bc42c syscall.read syscall/zsyscall_linux_amd64.go:696
+  4d7544 syscall.Read syscall/syscall_unix.go:188
+  4d752c internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d72e4 internal/poll.(*FD).Read internal/poll/fd_unix.go:163
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  62c27c net.dnsPacketRoundTrip net/dnsclient_unix.go:91
+  62d5c7 net.(*Resolver).exchange net/dnsclient_unix.go:170
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1966474876 GoSysCall p=3 g=67059950 off=342973
+  4bbbcf syscall.Close syscall/zsyscall_linux_amd64.go:295
+  4d6fd0 internal/poll.(*FD).destroy internal/poll/fd_unix.go:84
+  4d5e32 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4d706e internal/poll.(*FD).Close internal/poll/fd_unix.go:107
+  633ab7 net.(*netFD).Close net/fd_posix.go:37
+  645de4 net.(*conn).Close net/net.go:207
+  62d898 net.(*Resolver).exchange net/dnsclient_unix.go:174
+  62e744 net.(*Resolver).tryOneName net/dnsclient_unix.go:260
+  631bc4 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:612
+1966490684 GoUnblock p=3 g=67059950 off=342978 g=67059948 seq=2 (from 1927886672 GoBlockRecv p=12 g=67059948 off=725011, to 1966493244 GoStart p=3 g=67059948 off=342991 g=67059948 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  631cc7 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:613
+1966492540 GoEnd p=3 g=67059950 off=342989

@@ -1,0 +1,185 @@
+1927857894 GoStart p=12 g=67059948 off=724980 g=67059948 seq=0 (from 1927849403 GoCreate p=12 g=67059947 off=724963 g=67059948 stack=1109)
+  623380 internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:94
+1927881168 GoCreate p=12 g=67059948 off=724987 g=67059949 stack=1114 (to 1946143343 GoStart p=12 g=67059949 off=725127 g=67059949 seq=0)
+  631aab net.(*Resolver).goLookupIPCNAMEOrder.func3 net/dnsclient_unix.go:611
+  630d95 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:624
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1927884518 GoCreate p=12 g=67059948 off=724999 g=67059950 stack=1114 (to 1927890000 GoStart p=12 g=67059950 off=725015 g=67059950 seq=0)
+  631aab net.(*Resolver).goLookupIPCNAMEOrder.func3 net/dnsclient_unix.go:611
+  630d95 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:624
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1927886672 GoBlockRecv p=12 g=67059948 off=725011 (to 1966490684 GoUnblock p=3 g=67059950 off=342978 g=67059948 seq=2)
+  407fb7 runtime.chanrecv1 runtime/chan.go:440
+  6318e4 net.(*Resolver).goLookupIPCNAMEOrder.func4 net/dnsclient_unix.go:618
+  630ec1 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:628
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1966493244 GoStart p=3 g=67059948 off=342991 g=67059948 seq=0 (from 1966490684 GoUnblock p=3 g=67059950 off=342978 g=67059948 seq=2)
+1966494588 GoBlockRecv p=3 g=67059948 off=342997 (to 1985552959 GoUnblock p=3 g=67059949 off=343692 g=67059948 seq=0)
+  407fb7 runtime.chanrecv1 runtime/chan.go:440
+  6318e4 net.(*Resolver).goLookupIPCNAMEOrder.func4 net/dnsclient_unix.go:618
+  630ec1 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:628
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985556500 GoStart p=3 g=67059948 off=343703 g=67059948 seq=0 (from 1985552959 GoUnblock p=3 g=67059949 off=343692 g=67059948 seq=0)
+1985565631 GoSysCall p=3 g=67059948 off=343709
+  4bdb6b syscall.setsockopt syscall/zsyscall_linux_amd64.go:1481
+  64c032 syscall.SetsockoptInt syscall/syscall_unix.go:427
+  64c03c net.setDefaultSockopts net/sockopt_linux.go:21
+  64a778 net.socket net/sock_posix.go:23
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985571903 GoSysCall p=3 g=67059948 off=343714
+  4bd73a syscall.connect syscall/zsyscall_linux_amd64.go:1435
+  4ba46f syscall.Connect syscall/syscall_unix.go:269
+  634f03 net.(*netFD).connect net/fd_unix.go:59
+  64ae33 net.(*netFD).dial net/sock_posix.go:149
+  64a991 net.socket net/sock_posix.go:70
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985587497 GoSysCall p=3 g=67059948 off=343719
+  4bbbcf syscall.Close syscall/zsyscall_linux_amd64.go:295
+  4d6fd0 internal/poll.(*FD).destroy internal/poll/fd_unix.go:84
+  4d5e32 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4d706e internal/poll.(*FD).Close internal/poll/fd_unix.go:107
+  633ab7 net.(*netFD).Close net/fd_posix.go:37
+  645de4 net.(*conn).Close net/net.go:207
+  623d98 net.srcAddrs net/addrselect.go:52
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985595796 GoSysCall p=3 g=67059948 off=343724
+  4bdb6b syscall.setsockopt syscall/zsyscall_linux_amd64.go:1481
+  64c032 syscall.SetsockoptInt syscall/syscall_unix.go:427
+  64c03c net.setDefaultSockopts net/sockopt_linux.go:21
+  64a778 net.socket net/sock_posix.go:23
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985600873 GoSysCall p=3 g=67059948 off=343729
+  4bd73a syscall.connect syscall/zsyscall_linux_amd64.go:1435
+  4ba46f syscall.Connect syscall/syscall_unix.go:269
+  634f03 net.(*netFD).connect net/fd_unix.go:59
+  64ae33 net.(*netFD).dial net/sock_posix.go:149
+  64a991 net.socket net/sock_posix.go:70
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985614100 GoSysCall p=3 g=67059948 off=343734
+  4bbbcf syscall.Close syscall/zsyscall_linux_amd64.go:295
+  4d6fd0 internal/poll.(*FD).destroy internal/poll/fd_unix.go:84
+  4d5e32 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4d706e internal/poll.(*FD).Close internal/poll/fd_unix.go:107
+  633ab7 net.(*netFD).Close net/fd_posix.go:37
+  645de4 net.(*conn).Close net/net.go:207
+  623d98 net.srcAddrs net/addrselect.go:52
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985621566 GoSysCall p=3 g=67059948 off=343739
+  4bdb6b syscall.setsockopt syscall/zsyscall_linux_amd64.go:1481
+  64c032 syscall.SetsockoptInt syscall/syscall_unix.go:427
+  64c03c net.setDefaultSockopts net/sockopt_linux.go:21
+  64a778 net.socket net/sock_posix.go:23
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985626515 GoSysCall p=3 g=67059948 off=343744
+  4bd73a syscall.connect syscall/zsyscall_linux_amd64.go:1435
+  4ba46f syscall.Connect syscall/syscall_unix.go:269
+  634f03 net.(*netFD).connect net/fd_unix.go:59
+  64ae33 net.(*netFD).dial net/sock_posix.go:149
+  64a991 net.socket net/sock_posix.go:70
+  63f6d7 net.internetSocket net/ipsock_posix.go:142
+  6521bc net.(*sysDialer).dialUDP net/udpsock_posix.go:206
+  6508ba net.DialUDP net/udpsock.go:296
+  623d24 net.srcAddrs net/addrselect.go:47
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985638569 GoSysCall p=3 g=67059948 off=343749
+  4bbbcf syscall.Close syscall/zsyscall_linux_amd64.go:295
+  4d6fd0 internal/poll.(*FD).destroy internal/poll/fd_unix.go:84
+  4d5e32 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4d706e internal/poll.(*FD).Close internal/poll/fd_unix.go:107
+  633ab7 net.(*netFD).Close net/fd_posix.go:37
+  645de4 net.(*conn).Close net/net.go:207
+  623d98 net.srcAddrs net/addrselect.go:52
+  6238fc net.sortByRFC6724 net/addrselect.go:17
+  630c04 net.(*Resolver).goLookupIPCNAMEOrder net/dnsclient_unix.go:727
+  643631 net.(*Resolver).lookupIP net/lookup_unix.go:102
+  63623c net.glob..func1 net/hook.go:23
+  641c7e net.(*Resolver).lookupIPAddr.func1 net/lookup.go:319
+  6233ba internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:95
+1985647379 GoUnblock p=3 g=67059948 off=343754 g=67059947 seq=2 (from 1927854224 GoBlockSelect p=12 g=67059947 off=724975, to 1986724298 GoStart p=3 g=67059947 off=343927 g=67059947 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  6234ce internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:101
+1985660905 GoUnblock p=3 g=67059948 off=343765 g=67059879 seq=2 (from 1932154347 GoBlockSelect p=9 g=67059879 off=561348, to 1986776777 GoStart p=3 g=67059879 off=343967 g=67059879 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  6234ce internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:101
+1985664382 GoUnblock p=3 g=67059948 off=343776 g=67060152 seq=2 (from 1938625415 GoBlockSelect p=6 g=67060152 off=459327, to 1986818889 GoStart p=3 g=67060152 off=344006 g=67060152 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  6234ce internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:101
+1985666728 GoUnblock p=3 g=67059948 off=343787 g=67060258 seq=2 (from 1973953168 GoBlockSelect p=11 g=67060258 off=673591, to 1986854366 GoStart p=3 g=67060258 off=344045 g=67060258 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  6234ce internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:101
+1985669331 GoUnblock p=3 g=67059948 off=343797 g=67060297 seq=2 (from 1984711281 GoBlockSelect p=6 g=67060297 off=462534, to 1985671763 GoStart p=3 g=67060297 off=343809 g=67060297 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  6234ce internal/singleflight.(*Group).doCall internal/singleflight/singleflight.go:101
+1985670931 GoEnd p=3 g=67059948 off=343807

@@ -1,0 +1,63 @@
+702443557 GoStart p=6 g=680530335 off=847981 g=680530335 seq=1 (from 702424229 GoCreate p=9 g=680531183 off=976525 g=680530335 stack=15)
+  7160e0 net/http.(*persistConn).writeLoop net/http/transport.go:2339
+702480187 HeapAlloc p=6 g=680530335 off=847990 mem=9753713232
+702486992 HeapAlloc p=6 g=680530335 off=847998 mem=9753721424
+702489253 GoSysCall p=6 g=680530335 off=848006
+  485bd9 syscall.write syscall/zsyscall_linux_amd64.go:914
+  4e3dd6 syscall.Write syscall/syscall_unix.go:212
+  4e3d81 internal/poll.(*FD).Write.func1 internal/poll/fd_unix.go:267
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4df61b internal/poll.(*FD).Write internal/poll/fd_unix.go:267
+  5cad2e net.(*netFD).Write net/fd_posix.go:73
+  5dec4d net.(*conn).Write net/net.go:194
+  631ba1 crypto/tls.(*Conn).write crypto/tls/conn.go:914
+  631fc4 crypto/tls.(*Conn).writeRecordLocked crypto/tls/conn.go:963
+  633019 crypto/tls.(*Conn).Write crypto/tls/conn.go:1130
+  713371 net/http.persistConnWriter.Write net/http/transport.go:1727
+  5818fa bufio.(*Writer).Flush bufio/bufio.go:607
+  6eb44b net/http.(*Request).write net/http/request.go:676
+  7162a4 net/http.(*persistConn).writeLoop net/http/transport.go:2345
+702509584 GoSysCall p=6 g=680530335 off=848010
+  485bd9 syscall.write syscall/zsyscall_linux_amd64.go:914
+  4e3dd6 syscall.Write syscall/syscall_unix.go:212
+  4e3d81 internal/poll.(*FD).Write.func1 internal/poll/fd_unix.go:267
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4df61b internal/poll.(*FD).Write internal/poll/fd_unix.go:267
+  5cad2e net.(*netFD).Write net/fd_posix.go:73
+  5dec4d net.(*conn).Write net/net.go:194
+  631ba1 crypto/tls.(*Conn).write crypto/tls/conn.go:914
+  631fc4 crypto/tls.(*Conn).writeRecordLocked crypto/tls/conn.go:963
+  633019 crypto/tls.(*Conn).Write crypto/tls/conn.go:1130
+  713371 net/http.persistConnWriter.Write net/http/transport.go:1727
+  5818fa bufio.(*Writer).Flush bufio/bufio.go:607
+  6eb44b net/http.(*Request).write net/http/request.go:676
+  7162a4 net/http.(*persistConn).writeLoop net/http/transport.go:2345
+702524304 GoSysCall p=6 g=680530335 off=848015
+  485bd9 syscall.write syscall/zsyscall_linux_amd64.go:914
+  4e3dd6 syscall.Write syscall/syscall_unix.go:212
+  4e3d81 internal/poll.(*FD).Write.func1 internal/poll/fd_unix.go:267
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4df61b internal/poll.(*FD).Write internal/poll/fd_unix.go:267
+  5cad2e net.(*netFD).Write net/fd_posix.go:73
+  5dec4d net.(*conn).Write net/net.go:194
+  631ba1 crypto/tls.(*Conn).write crypto/tls/conn.go:914
+  631fc4 crypto/tls.(*Conn).writeRecordLocked crypto/tls/conn.go:963
+  633019 crypto/tls.(*Conn).Write crypto/tls/conn.go:1130
+  4d9765 io.copyBuffer io/io.go:411
+  713444 io.Copy io/io.go:368
+  7133e1 net/http.persistConnWriter.ReadFrom net/http/transport.go:1736
+  58254f bufio.(*Writer).ReadFrom bufio/bufio.go:730
+  4d985e io.copyBuffer io/io.go:395
+  706a49 io.Copy io/io.go:368
+  706a01 net/http.(*transferWriter).doBodyCopy net/http/transfer.go:400
+  70690f net/http.(*transferWriter).writeBody net/http/transfer.go:359
+  6eb304 net/http.(*Request).write net/http/request.go:682
+  7162a4 net/http.(*persistConn).writeLoop net/http/transport.go:2345
+702557584 GoUnblock p=6 g=680530335 off=848020 g=680531181 seq=4 (from 702438139 GoBlockSelect p=9 g=680531181 off=976558, to 702568037 GoStart p=6 g=680531181 off=848035 g=680531181 seq=0)
+  4058b4 runtime.chansend1 runtime/chan.go:143
+  7163bc net/http.(*persistConn).writeLoop net/http/transport.go:2367
+702565733 GoBlockSelect p=6 g=680530335 off=848031 (to 727330868 GoUnblock p=3 g=680530334 off=447584 g=680530335 seq=2)
+  44a58e runtime.selectgo runtime/select.go:338
+  7161fb net/http.(*persistConn).writeLoop net/http/transport.go:2342
+727336479 GoStart p=3 g=680530335 off=447599 g=680530335 seq=0 (from 727330868 GoUnblock p=3 g=680530334 off=447584 g=680530335 seq=2)
+727337460 GoEnd p=3 g=680530335 off=447606

@@ -1,0 +1,10 @@
+696354866 GoStart p=0 g=680532998 off=655357 g=680532998 seq=0 (from 696346204 GoCreate p=0 g=680531183 off=655340 g=680532998 stack=39)
+  5efd00 net.(*netFD).connect.func2 net/fd_unix.go:117
+696355527 GoBlockSelect p=0 g=680532998 off=655365 (to 697852105 GoUnblock p=7 g=680531183 off=922156 g=680532998 seq=2)
+  44a58e runtime.selectgo runtime/select.go:338
+  5efdc4 net.(*netFD).connect.func2 net/fd_unix.go:118
+697866548 GoStart p=7 g=680532998 off=922173 g=680532998 seq=0 (from 697852105 GoUnblock p=7 g=680531183 off=922156 g=680532998 seq=2)
+697868361 GoUnblock p=7 g=680532998 off=922181 g=680531183 seq=0 (from 697859508 GoBlockRecv p=7 g=680531183 off=922168, to 697871135 GoStart p=7 g=680531183 off=922191 g=680531183 seq=0)
+  4058b4 runtime.chansend1 runtime/chan.go:143
+  5efdf5 net.(*netFD).connect.func2 net/fd_unix.go:127
+697870473 GoEnd p=7 g=680532998 off=922189

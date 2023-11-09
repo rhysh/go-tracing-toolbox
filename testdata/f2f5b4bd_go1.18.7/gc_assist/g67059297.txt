@@ -1,0 +1,232 @@
+1317564498 GoStart p=2 g=67059297 off=64354 g=67059297 seq=0 (from 1317557714 GoCreate p=2 g=67059296 off=64338 g=67059297 stack=33)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317570065 GCMarkAssistStart p=2 g=67059297 off=64361
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317842788 GCMarkAssistDone p=2 g=67059297 off=64366
+1317875599 HeapAlloc p=2 g=67059297 off=64369 mem=13410400224
+1317909455 HeapAlloc p=2 g=67059297 off=64377 mem=13410408416
+1317945294 GoCreate p=2 g=67059297 off=64385 g=67059410 stack=65 (to 1317956430 GoStart p=2 g=67059410 off=64401 g=67059410 seq=0)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317951438 GoBlockSelect p=2 g=67059297 off=64396 (to 1317957625 GoUnblock p=2 g=67059410 off=64408 g=67059297 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1317960825 GoStart p=2 g=67059297 off=64418 g=67059297 seq=0 (from 1317957625 GoUnblock p=2 g=67059410 off=64408 g=67059297 seq=0)
+1317971726 GCMarkAssistStart p=2 g=67059297 off=64424
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  8d68cb crypto/sha256.New crypto/sha256/sha256.go:162
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1318461471 GCMarkAssistDone p=2 g=67059297 off=64429
+1318473759 HeapAlloc p=2 g=67059297 off=64433 mem=13410457568
+1318495327 GCMarkAssistStart p=2 g=67059297 off=64441
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  4fc2af strings.(*Builder).grow strings/builder.go:67
+  4fc297 strings.(*Builder).Grow strings/builder.go:81
+  4fc339 strings.Join strings/strings.go:438
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1318990021 GCMarkAssistDone p=2 g=67059297 off=64446
+1319046532 GoUnblock p=2 g=67059297 off=64450 g=66550287 seq=44 (from 1258999552 GoBlockSelect p=7 g=66550287 off=241509, to 1334208703 GoStart p=2 g=66550287 off=302943 g=66550287 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  74ef92 net/http.(*persistConn).roundTrip net/http/transport.go:2601
+  742d28 net/http.(*Transport).roundTrip net/http/transport.go:594
+  72afd8 net/http.(*Transport).RoundTrip net/http/roundtrip.go:17
+  6ec877 net/http.send net/http/client.go:252
+  6ec11a net/http.(*Client).send net/http/client.go:176
+  6ee554 net/http.(*Client).do net/http/client.go:725
+  911ce6 net/http.(*Client).Do net/http/client.go:593
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1319080751 GoBlockSelect p=2 g=67059297 off=302260 (to 1334273662 GoUnblock p=2 g=66550287 off=302957 g=67059297 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  74f293 net/http.(*persistConn).roundTrip net/http/transport.go:2620
+  742d28 net/http.(*Transport).roundTrip net/http/transport.go:594
+  72afd8 net/http.(*Transport).RoundTrip net/http/roundtrip.go:17
+  6ec877 net/http.send net/http/client.go:252
+  6ec11a net/http.(*Client).send net/http/client.go:176
+  6ee554 net/http.(*Client).do net/http/client.go:725
+  911ce6 net/http.(*Client).Do net/http/client.go:593
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1334278676 GoStart p=2 g=67059297 off=302969 g=67059297 seq=0 (from 1334273662 GoUnblock p=2 g=66550287 off=302957 g=67059297 seq=0)
+1334281086 GoBlockSelect p=2 g=67059297 off=302975 (to 1348424876 GoUnblock p=2 g=66550286 off=303075 g=67059297 seq=0)
+  449eb1 runtime.selectgo runtime/select.go:328
+  74f293 net/http.(*persistConn).roundTrip net/http/transport.go:2620
+  742d28 net/http.(*Transport).roundTrip net/http/transport.go:594
+  72afd8 net/http.(*Transport).RoundTrip net/http/roundtrip.go:17
+  6ec877 net/http.send net/http/client.go:252
+  6ec11a net/http.(*Client).send net/http/client.go:176
+  6ee554 net/http.(*Client).do net/http/client.go:725
+  911ce6 net/http.(*Client).Do net/http/client.go:593
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348449260 GoStart p=2 g=67059297 off=303087 g=67059297 seq=0 (from 1348424876 GoUnblock p=2 g=66550286 off=303075 g=67059297 seq=0)
+1348462188 GoUnblock p=2 g=67059297 off=303094 g=66550286 seq=0 (from 1348446209 GoBlockSelect p=2 g=66550286 off=303083, to 1348478359 GoStart p=2 g=66550286 off=303108 g=66550286 seq=0)
+  40729c runtime.chansend1 runtime/chan.go:144
+  74d5d6 net/http.(*persistConn).readLoop.func4 net/http/transport.go:2183
+  7500bc net/http.(*bodyEOFSignal).condfn net/http/transport.go:2805
+  7500a5 net/http.(*bodyEOFSignal).Read net/http/transport.go:2781
+  6efb92 net/http.(*cancelTimerBody).Read net/http/client.go:964
+  4ffff7 bytes.(*Buffer).ReadFrom bytes/buffer.go:204
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348472897 GoBlockRecv p=2 g=67059297 off=303103 (to 1348523777 GoUnblock p=2 g=66550286 off=303115 g=67059297 seq=0)
+  407fb7 runtime.chanrecv1 runtime/chan.go:440
+  74d619 net/http.(*persistConn).readLoop.func4 net/http/transport.go:2185
+  7500bc net/http.(*bodyEOFSignal).condfn net/http/transport.go:2805
+  7500a5 net/http.(*bodyEOFSignal).Read net/http/transport.go:2781
+  6efb92 net/http.(*cancelTimerBody).Read net/http/client.go:964
+  4ffff7 bytes.(*Buffer).ReadFrom bytes/buffer.go:204
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348542571 GoStart p=2 g=67059297 off=303131 g=67059297 seq=0 (from 1348523777 GoUnblock p=2 g=66550286 off=303115 g=67059297 seq=0)
+1348545473 GCMarkAssistStart p=2 g=67059297 off=303138
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  8c8504 encoding/json.NewDecoder encoding/json/stream.go:32
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348879016 GCMarkAssistDone p=2 g=67059297 off=303143
+1348945746 GoUnblock p=2 g=67059297 off=303146 g=67059296 seq=0 (from 1317560956 GoBlockSync p=2 g=67059296 off=64349, to 1348951293 GoStart p=2 g=67059296 off=303157 g=67059296 seq=0)
+  4763c6 sync.(*WaitGroup).Add sync/waitgroup.go:99
+  476464 sync.(*WaitGroup).Done sync/waitgroup.go:105
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1348950098 GoEnd p=2 g=67059297 off=303154

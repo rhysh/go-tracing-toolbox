@@ -1,0 +1,106 @@
+1234274010 GoStart p=3 g=67059273 off=123834 g=67059273 seq=0 (from 1211307364 GoCreate p=3 g=67059316 off=123790 g=67059273 stack=137)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1234285935 GCMarkAssistStart p=3 g=67059273 off=123841
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  51bcc4 context.WithDeadline context/context.go:442
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1235131837 GCMarkAssistDone p=3 g=67059273 off=123846
+1235162792 GoSysCall p=3 g=67059273 off=123850
+  4bc70c syscall.write syscall/zsyscall_linux_amd64.go:924
+  4d956d syscall.Write syscall/syscall_unix.go:216
+  4d955f internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d923d internal/poll.(*FD).Write internal/poll/fd_unix.go:383
+  634468 net.(*netFD).Write net/fd_posix.go:96
+  645c44 net.(*conn).Write net/net.go:195
+  5c03a1 bufio.(*Writer).Flush bufio/bufio.go:628
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1235184957 GoSysCall p=3 g=67059273 off=123855
+  4bc42c syscall.read syscall/zsyscall_linux_amd64.go:696
+  4d7544 syscall.Read syscall/syscall_unix.go:188
+  4d752c internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d72e4 internal/poll.(*FD).Read internal/poll/fd_unix.go:163
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  5be7a2 bufio.(*Reader).fill bufio/bufio.go:106
+  5bf38e bufio.(*Reader).ReadSlice bufio/bufio.go:371
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1235192061 GoBlockNet p=3 g=67059273 off=123860 (to 1246621571 GoUnblock p=1000002 g=0 off=874680 g=67059273 seq=2)
+  4d7507 internal/poll.(*FD).Read internal/poll/fd_unix.go:167
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  5be7a2 bufio.(*Reader).fill bufio/bufio.go:106
+  5bf38e bufio.(*Reader).ReadSlice bufio/bufio.go:371
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1248208799 GoStart p=6 g=67059273 off=440553 g=67059273 seq=3 (from 1246621571 GoUnblock p=1000002 g=0 off=874680 g=67059273 seq=2)
+1248209567 GoSysCall p=6 g=67059273 off=440561
+  4bc42c syscall.read syscall/zsyscall_linux_amd64.go:696
+  4d7544 syscall.Read syscall/syscall_unix.go:188
+  4d752c internal/poll.ignoringEINTRIO internal/poll/fd_unix.go:794
+  4d72e4 internal/poll.(*FD).Read internal/poll/fd_unix.go:163
+  633be8 net.(*netFD).Read net/fd_posix.go:55
+  645a64 net.(*conn).Read net/net.go:183
+  5be7a2 bufio.(*Reader).fill bufio/bufio.go:106
+  5bf38e bufio.(*Reader).ReadSlice bufio/bufio.go:371
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1248228852 HeapAlloc p=6 g=67059273 off=440565 mem=13403135768
+1248243551 GoEnd p=6 g=67059273 off=440573

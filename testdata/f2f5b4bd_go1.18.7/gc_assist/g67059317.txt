@@ -1,0 +1,43 @@
+1189575567 GoStart p=8 g=67059317 off=175389 g=67059317 seq=0 (from 1189561743 GoCreate p=8 g=67059316 off=175373 g=67059317 stack=33)
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1189581732 GCMarkAssistStart p=8 g=67059317 off=175396
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40f6e6 runtime.newobject runtime/malloc.go:1259
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1189912566 GCMarkAssistDone p=8 g=67059317 off=175401
+1189954486 HeapAlloc p=8 g=67059317 off=175404 mem=13395789432
+1189955766 GCMarkAssistStart p=8 g=67059317 off=175412
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  44ef91 runtime.makeslice runtime/slice.go:103
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1190341256 GCMarkAssistDone p=8 g=67059317 off=175416
+1190390386 GCMarkAssistStart p=8 g=67059317 off=175420
+  41f484 runtime.traceGCMarkAssistStart runtime/trace.go:1063
+  41f46e runtime.gcAssistAlloc runtime/mgcmark.go:464
+  40edde runtime.mallocgc runtime/malloc.go:973
+  40cfe6 runtime.convTstring runtime/iface.go:392
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1190714970 GCMarkAssistDone p=8 g=67059317 off=175425
+1190726810 GoUnblock p=8 g=67059317 off=175428 g=67059316 seq=0 (from 1189569252 GoBlockSync p=8 g=67059316 off=175384, to 1190731780 GoStart p=8 g=67059316 off=175439 g=67059316 seq=0)
+  4763c6 sync.(*WaitGroup).Add sync/waitgroup.go:99
+  476464 sync.(*WaitGroup).Done sync/waitgroup.go:105
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+1190730714 GoEnd p=8 g=67059317 off=175436

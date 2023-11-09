@@ -1,0 +1,91 @@
+695829041 GoStart p=5 g=680533121 off=560230 g=680533121 seq=1 (from 695785500 GoCreate p=4 g=680531184 off=815248 g=680533121 stack=157)
+  5ef740 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:601
+695834588 HeapAlloc p=5 g=680533121 off=560239 mem=9749964848
+695857884 GoSysCall p=5 g=680533121 off=560247
+  487018 syscall.setsockopt syscall/zsyscall_linux_amd64.go:1521
+  5e55a7 syscall.SetsockoptInt syscall/syscall_unix.go:307
+  5e55bb net.setDefaultSockopts net/sockopt_linux.go:21
+  5e3965 net.socket net/sock_posix.go:23
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5eb5c4 net.(*sysDialer).dialUDP net/udpsock_posix.go:98
+  5c0ce4 net.(*sysDialer).dialSingle net/dial.go:583
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  5db9ae net.(*Resolver).dial net/lookup_unix.go:70
+  5c3ef0 net.(*Resolver).exchange net/dnsclient_unix.go:156
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+695863942 GoSysCall p=5 g=680533121 off=560252
+  486c4f syscall.connect syscall/zsyscall_linux_amd64.go:1465
+  484486 syscall.Connect syscall/syscall_unix.go:262
+  5cb41a net.(*netFD).connect net/fd_unix.go:59
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5eb5c4 net.(*sysDialer).dialUDP net/udpsock_posix.go:98
+  5c0ce4 net.(*sysDialer).dialSingle net/dial.go:583
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  5db9ae net.(*Resolver).dial net/lookup_unix.go:70
+  5c3ef0 net.(*Resolver).exchange net/dnsclient_unix.go:156
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+695880454 GoSysCall p=5 g=680533121 off=560257
+  485bd9 syscall.write syscall/zsyscall_linux_amd64.go:914
+  4e3dd6 syscall.Write syscall/syscall_unix.go:212
+  4e3d81 internal/poll.(*FD).Write.func1 internal/poll/fd_unix.go:267
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4df61b internal/poll.(*FD).Write internal/poll/fd_unix.go:267
+  5cad2e net.(*netFD).Write net/fd_posix.go:73
+  5dec4d net.(*conn).Write net/net.go:194
+  5c30d4 net.dnsPacketRoundTrip net/dnsclient_unix.go:81
+  5c40c7 net.(*Resolver).exchange net/dnsclient_unix.go:166
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+695910300 GoSysCall p=5 g=680533121 off=560262
+  4859d9 syscall.read syscall/zsyscall_linux_amd64.go:686
+  4e3d2b syscall.Read syscall/syscall_unix.go:187
+  4e3cfd internal/poll.(*FD).Read.func1 internal/poll/fd_unix.go:155
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4de8bd internal/poll.(*FD).Read internal/poll/fd_unix.go:155
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  5c3152 net.dnsPacketRoundTrip net/dnsclient_unix.go:87
+  5c40c7 net.(*Resolver).exchange net/dnsclient_unix.go:166
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+695913585 GoBlockNet p=5 g=680533121 off=560267 (to 696031708 GoUnblock p=1000002 g=0 off=1092877 g=680533121 seq=2)
+  4de902 internal/poll.(*FD).Read internal/poll/fd_unix.go:159
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  5c3152 net.dnsPacketRoundTrip net/dnsclient_unix.go:87
+  5c40c7 net.(*Resolver).exchange net/dnsclient_unix.go:166
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+696032113 GoStart p=15 g=680533121 off=1092887 g=680533121 seq=0 (from 696031708 GoUnblock p=1000002 g=0 off=1092877 g=680533121 seq=2)
+696033180 GoSysCall p=15 g=680533121 off=1092894
+  4859d9 syscall.read syscall/zsyscall_linux_amd64.go:686
+  4e3d2b syscall.Read syscall/syscall_unix.go:187
+  4e3cfd internal/poll.(*FD).Read.func1 internal/poll/fd_unix.go:155
+  4e16a6 internal/poll.ignoringEINTR internal/poll/fd_unix.go:567
+  4de8bd internal/poll.(*FD).Read internal/poll/fd_unix.go:155
+  5ca8ce net.(*netFD).Read net/fd_posix.go:55
+  5dea0d net.(*conn).Read net/net.go:182
+  5c3152 net.dnsPacketRoundTrip net/dnsclient_unix.go:87
+  5c40c7 net.(*Resolver).exchange net/dnsclient_unix.go:166
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+696048860 GoSysCall p=15 g=680533121 off=1092898
+  485164 syscall.Close syscall/zsyscall_linux_amd64.go:285
+  4de4c2 internal/poll.(*FD).destroy internal/poll/fd_unix.go:77
+  4dd4e4 internal/poll.(*FD).decref internal/poll/fd_mutex.go:213
+  4de58e internal/poll.(*FD).Close internal/poll/fd_unix.go:99
+  5ca74e net.(*netFD).Close net/fd_posix.go:37
+  5dedfd net.(*conn).Close net/net.go:206
+  5c41a3 net.(*Resolver).exchange net/dnsclient_unix.go:170
+  5c50e6 net.(*Resolver).tryOneName net/dnsclient_unix.go:256
+  5ef7fa net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:602
+696061489 GoUnblock p=15 g=680533121 off=1092903 g=680531184 seq=0 (from 696023815 GoBlockRecv p=15 g=680531184 off=1092867, to 696065095 GoStart p=15 g=680531184 off=1092915 g=680531184 seq=0)
+  4058b4 runtime.chansend1 runtime/chan.go:143
+  5ef950 net.(*Resolver).goLookupIPCNAMEOrder.func3.1 net/dnsclient_unix.go:603
+696064177 GoEnd p=15 g=680533121 off=1092913

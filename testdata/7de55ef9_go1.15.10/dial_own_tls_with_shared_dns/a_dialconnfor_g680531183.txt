@@ -1,0 +1,183 @@
+695748081 GoStart p=4 g=680531183 off=815214 g=680531183 seq=0 (from 695730843 GoCreate p=4 g=680531181 off=815197 g=680531183 stack=42)
+  710640 net/http.(*Transport).dialConnFor net/http/transport.go:1421
+695758811 GoCreate p=4 g=680531183 off=815222 g=680531184 stack=154 (to 695769137 GoStart p=4 g=680531184 off=815240 g=680531184 seq=0)
+  5b9fcb internal/singleflight.(*Group).DoChan internal/singleflight/singleflight.go:88
+  5da4be net.(*Resolver).lookupIPAddr net/lookup.go:291
+  5d9805 net.(*Resolver).LookupIPAddr net/lookup.go:204
+  5d97af net.LookupIP net/lookup.go:190
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+695764763 GoBlockSelect p=4 g=680531183 off=815235 (to 696184711 GoUnblock p=15 g=680531184 off=1092975 g=680531183 seq=2)
+  44a58e runtime.selectgo runtime/select.go:338
+  5da5a4 net.(*Resolver).lookupIPAddr net/lookup.go:299
+  5d9805 net.(*Resolver).LookupIPAddr net/lookup.go:204
+  5d97af net.LookupIP net/lookup.go:190
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+696289586 GoStart p=0 g=680531183 off=655318 g=680531183 seq=3 (from 696184711 GoUnblock p=15 g=680531184 off=1092975 g=680531183 seq=2)
+696302834 HeapAlloc p=0 g=680531183 off=655327 mem=9750182704
+696319623 GoSysCall p=0 g=680531183 off=655335
+  486c4f syscall.connect syscall/zsyscall_linux_amd64.go:1465
+  484486 syscall.Connect syscall/syscall_unix.go:262
+  5cb41a net.(*netFD).connect net/fd_unix.go:59
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+696346204 GoCreate p=0 g=680531183 off=655340 g=680532998 stack=39 (to 696354866 GoStart p=0 g=680532998 off=655357 g=680532998 seq=0)
+  5cb5d3 net.(*netFD).connect net/fd_unix.go:117
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+696350535 GoBlockNet p=0 g=680531183 off=655352 (to 697827764 GoUnblock p=1000002 g=0 off=560553 g=680531183 seq=4)
+  5cb5d6 internal/poll.(*FD).WaitWrite internal/poll/fd_unix.go:508
+  5cb606 net.(*netFD).connect net/fd_unix.go:141
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697837364 GoStart p=7 g=680531183 off=922144 g=680531183 seq=5 (from 697827764 GoUnblock p=1000002 g=0 off=560553 g=680531183 seq=4)
+697838345 GoSysCall p=7 g=680531183 off=922152
+  486f05 syscall.getsockopt syscall/zsyscall_linux_amd64.go:1511
+  484644 syscall.GetsockoptInt syscall/syscall_unix.go:277
+  5cb63c net.(*netFD).connect net/fd_unix.go:149
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697852105 GoUnblock p=7 g=680531183 off=922156 g=680532998 seq=2 (from 696355527 GoBlockSelect p=0 g=680532998 off=655365, to 697866548 GoStart p=7 g=680532998 off=922173 g=680532998 seq=0)
+  5efbce net.(*netFD).connect.func1 net/fd_unix.go:105
+  5cb761 net.(*netFD).connect net/fd_unix.go:162
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697859508 GoBlockRecv p=7 g=680531183 off=922168 (to 697868361 GoUnblock p=7 g=680532998 off=922181 g=680531183 seq=0)
+  40642a runtime.chanrecv1 runtime/chan.go:439
+  5efbee net.(*netFD).connect.func1 net/fd_unix.go:106
+  5cb761 net.(*netFD).connect net/fd_unix.go:162
+  5e3f67 net.(*netFD).dial net/sock_posix.go:149
+  5e3a84 net.socket net/sock_posix.go:70
+  5d8884 net.internetSocket net/ipsock_posix.go:141
+  5e8184 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:65
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697871135 GoStart p=7 g=680531183 off=922191 g=680531183 seq=0 (from 697868361 GoUnblock p=7 g=680532998 off=922181 g=680531183 seq=0)
+697875999 GoSysCall p=7 g=680531183 off=922198
+  487018 syscall.setsockopt syscall/zsyscall_linux_amd64.go:1521
+  4e1fb6 syscall.SetsockoptInt syscall/syscall_unix.go:307
+  4e1f72 internal/poll.(*FD).SetsockoptInt internal/poll/sockopt.go:17
+  5e88ec net.setNoDelay net/tcpsockopt_posix.go:15
+  5e8376 net.newTCPConn net/tcpsock.go:195
+  5e82b3 net.(*sysDialer).doDialTCP net/tcpsock_posix.go:101
+  5e8076 net.(*sysDialer).dialTCP net/tcpsock_posix.go:61
+  5c0c44 net.(*sysDialer).dialSingle net/dial.go:580
+  5c0011 net.(*sysDialer).dialSerial net/dial.go:548
+  5bf384 net.(*Dialer).DialContext net/dial.go:425
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697883636 GoSysCall p=7 g=680531183 off=922203
+  487018 syscall.setsockopt syscall/zsyscall_linux_amd64.go:1521
+  4e1fb6 syscall.SetsockoptInt syscall/syscall_unix.go:307
+  4e1f72 internal/poll.(*FD).SetsockoptInt internal/poll/sockopt.go:17
+  5e5b0c net.setKeepAlive net/sockopt_posix.go:117
+  5bf2d5 net.(*Dialer).DialContext net/dial.go:432
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697889524 GoSysCall p=7 g=680531183 off=922208
+  487018 syscall.setsockopt syscall/zsyscall_linux_amd64.go:1521
+  4e1fb6 syscall.SetsockoptInt syscall/syscall_unix.go:307
+  4e1f72 internal/poll.(*FD).SetsockoptInt internal/poll/sockopt.go:17
+  5e8a34 net.setKeepAlivePeriod net/tcpsockopt_unix.go:18
+  5bf313 net.(*Dialer).DialContext net/dial.go:437
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697895199 GoSysCall p=7 g=680531183 off=922213
+  487018 syscall.setsockopt syscall/zsyscall_linux_amd64.go:1521
+  4e1fb6 syscall.SetsockoptInt syscall/syscall_unix.go:307
+  4e1f72 internal/poll.(*FD).SetsockoptInt internal/poll/sockopt.go:17
+  5e8b04 net.setKeepAlivePeriod net/tcpsockopt_unix.go:21
+  5bf313 net.(*Dialer).DialContext net/dial.go:437
+  deaddead redacted.mod/pkg.fn redacted.mod/pkg/fn.go:1
+  70eddc net/http.(*Transport).dial net/http/transport.go:1144
+  712e1a net/http.(*Transport).dialConn net/http/transport.go:1578
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697907252 GoCreate p=7 g=680531183 off=922218 g=680533140 stack=34 (to 697914335 GoStart p=7 g=680533140 off=922233 g=680533140 seq=0)
+  710fd6 net/http.(*persistConn).addTLS net/http/transport.go:1508
+  713084 net/http.(*Transport).dialConn net/http/transport.go:1588
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+697910687 GoBlockRecv p=7 g=680531183 off=922229 (to 702408272 GoUnblock p=9 g=680533140 off=976479 g=680531183 seq=8)
+  40642a runtime.chanrecv1 runtime/chan.go:439
+  711004 net/http.(*persistConn).addTLS net/http/transport.go:1518
+  713084 net/http.(*Transport).dialConn net/http/transport.go:1588
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+702414266 GoStart p=9 g=680531183 off=976493 g=680531183 seq=0 (from 702408272 GoUnblock p=9 g=680533140 off=976479 g=680531183 seq=8)
+702416912 HeapAlloc p=9 g=680531183 off=976500 mem=9753690640
+702417765 HeapAlloc p=9 g=680531183 off=976507 mem=9753698832
+702418917 GoCreate p=9 g=680531183 off=976514 g=680530334 stack=19 (to 702431120 GoStart p=7 g=680530334 off=924195 g=680530334 seq=1)
+  712016 net/http.(*Transport).dialConn net/http/transport.go:1711
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+702424229 GoCreate p=9 g=680531183 off=976525 g=680530335 stack=15 (to 702443557 GoStart p=6 g=680530335 off=847981 g=680530335 seq=1)
+  71203b net/http.(*Transport).dialConn net/http/transport.go:1712
+  710705 net/http.(*Transport).dialConnFor net/http/transport.go:1424
+702431184 GoUnblock p=9 g=680531183 off=976537 g=680531181 seq=2 (from 695740017 GoBlockSelect p=4 g=680531181 off=815209, to 702432634 GoStart p=9 g=680531181 off=976551 g=680531181 seq=0)
+  70efb1 net/http.(*wantConn).tryDeliver net/http/transport.go:1203
+  71073e net/http.(*Transport).dialConnFor net/http/transport.go:1425
+702432357 GoEnd p=9 g=680531183 off=976549
