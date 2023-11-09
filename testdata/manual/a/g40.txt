@@ -1,0 +1,11 @@
+4500 GoStart p=3 g=40 off=200 g=40 seq=0 (from 4000 GoCreate p=3 g=10 off=100 g=40 stack=1001)
+  6359e0 net.(*netFD).connect.func2 /usr/local/go/src/net/fd_unix.go:117
+20000 GoBlockSelect p=3 g=40 off=300 (to 40000 GoUnblock p=13 g=20 off=400 g=40 seq=2)
+  449eb1 runtime.selectgo /usr/local/go/src/runtime/select.go:328
+  635a65 net.(*netFD).connect.func2 /usr/local/go/src/net/fd_unix.go:118
+57000 GoStart p=13 g=40 off=500 g=40 seq=0 (from 40000 GoUnblock p=13 g=20 off=400 g=40 seq=2)
+61000 GoBlockSend p=13 g=40 off=600 (to 72000 GoUnblock p=11 g=30 off=700 g=40 seq=4)
+  40729c runtime.chansend1 /usr/local/go/src/runtime/chan.go:144
+  635ada net.(*netFD).connect.func2 /usr/local/go/src/net/fd_unix.go:125
+79000 GoStart p=11 g=40 off=800 g=40 seq=0 (from 72000 GoUnblock p=11 g=30 off=700 g=40 seq=4)
+82000 GoEnd p=11 g=40 off=900

@@ -1,0 +1,3 @@
+4000 GoCreate p=3 g=10 off=100 g=40 stack=1001 (to 4500 GoStart p=3 g=40 off=200 g=40 seq=0)
+4300 GoBlock p=3 g=10 off=220
+81300 GoEnd p=11 g=10 off=890
