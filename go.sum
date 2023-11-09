@@ -1,2 +1,4 @@
+github.com/ajstarks/svgo v0.0.0-20191124160048-bd5c74aaa11c h1:W8zCD9HGV8MjIVKGOjOeo1MDliGjLFo2mwFUX/ydIro=
+github.com/ajstarks/svgo v0.0.0-20191124160048-bd5c74aaa11c/go.mod h1:K08gAheRH3/J6wwsYMMT4xOr94bZjxIelGM0+d/wbFw=
 github.com/google/pprof v0.0.0-20231101202521-4ca4178f5c7a h1:fEBsGL/sjAuJrgah5XqmmYsTLzJp/TO9Lhy39gkverk=
 github.com/google/pprof v0.0.0-20231101202521-4ca4178f5c7a/go.mod h1:czg5+yv1E0ZGTi6S6vVK1mke0fV+FaUhNGcd6VRS9Ik=
