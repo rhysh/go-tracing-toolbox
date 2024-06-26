@@ -67,8 +67,7 @@ It requires the help of the "dot" command, the same tool that "go tool pprof" us
 It works with the v2 execution trace format, so supports execution traces from Go 1.22+.
 
 ```
-grstates -input=./pprof/trace -dot=/tmp/trace.dot
-dot -o/tmp/trace.svg -Tsvg /tmp/trace.dot
+grstates -input=./pprof/trace -svg=/tmp/trace.svg
 ```
 
 ### `etgrep`
