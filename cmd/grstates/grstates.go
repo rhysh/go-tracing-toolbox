@@ -9,26 +9,30 @@
 // stack change, we can build a view of its actions as a state machine.
 //
 // This tool processes an execution trace into a directed graph in the DOT
-// language, to be post-processed with the same "dot" tool that "go tool pprof"
+// language and rendered as an SVG, via the same "dot" tool that "go tool pprof"
 // uses.
 package main
 
 import (
 	"bufio"
 	"bytes"
+	"context"
 	"flag"
 	"fmt"
 	"io"
 	"log"
 	"os"
+	"os/exec"
 	"strings"
 
+	driver "github.com/rhysh/go-tracing-toolbox/cmd/grstates/internal/pprof_driver"
 	"golang.org/x/exp/trace"
 )
 
 func main() {
 	input := flag.String("input", "", "Path to execution trace file")
 	dotFile := flag.String("dot", "", "Path to DOT-format directed graph output")
+	svgFile := flag.String("svg", "", "Path to SVG-format image output")
 	flag.Parse()
 
 	f, err := os.Open(*input)
@@ -88,6 +92,27 @@ func main() {
 		err = os.WriteFile(*dotFile, dotBuf.Bytes(), 0700)
 		if err != nil {
 			log.Fatalf("write dot file: %v", err)
+		}
+	}
+	if *svgFile != "" {
+		var dotBuf, svgBuf, errBuf bytes.Buffer
+		err := writeDot(&dotBuf, goroutines)
+		if err != nil {
+			log.Fatalf("generate dot file: %v", err)
+		}
+		ctx := context.Background()
+		cmd := exec.CommandContext(ctx, "dot", "-T", "svg")
+		cmd.Stdin = &dotBuf
+		cmd.Stdout = &svgBuf
+		cmd.Stderr = &errBuf
+		err = cmd.Run()
+		if err != nil {
+			log.Fatalf("generate svg file: %v\n%s", err, errBuf.String())
+		}
+		svg := driver.MassageSVG(svgBuf.String())
+		err = os.WriteFile(*svgFile, []byte(svg), 0700)
+		if err != nil {
+			log.Fatalf("write svg file: %v", err)
 		}
 	}
 }
