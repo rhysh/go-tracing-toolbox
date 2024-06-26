@@ -59,6 +59,18 @@ apshuffle -write-links
 apshuffle -profile-sort=profile -with-trace | head -n 30
 ```
 
+### `grstates`
+
+This tool creates a visualization of the state machines that a program's goroutines run through in an execution trace.
+It requires the help of the "dot" command, the same tool that "go tool pprof" uses for most of its visualizations.
+
+It works with the v2 execution trace format, so supports execution traces from Go 1.22+.
+
+```
+grstates -input=./pprof/trace -dot=/tmp/trace.dot
+dot -o/tmp/trace.svg -Tsvg /tmp/trace.dot
+```
+
 ### `etgrep`
 
 This tool gives a text-based peek into the data that make up Go's execution traces.
