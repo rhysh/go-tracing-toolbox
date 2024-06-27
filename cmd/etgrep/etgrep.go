@@ -125,7 +125,7 @@ func (c *config) printableString(ev trace.Event) string {
 	str := new(strings.Builder)
 	fmt.Fprintf(str, "%s\n", eventString(ev))
 	if c.showStacks {
-		fmt.Printf("%s", stackString(eventStack(ev)))
+		fmt.Fprintf(str, "%s", stackString(eventStack(ev)))
 	}
 	return str.String()
 }
