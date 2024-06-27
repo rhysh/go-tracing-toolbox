@@ -59,6 +59,21 @@ apshuffle -write-links
 apshuffle -profile-sort=profile -with-trace | head -n 30
 ```
 
+### `etgrep`
+
+This tool gives a text-based peek into the data that make up Go's execution traces.
+Its basic output is similar to that of `go tool trace -d=1`, but it also allows printing events' associated call stacks, and filtering based on event type and call stack structure.
+
+It works with the v2 execution trace format, so supports execution traces from Go 1.22+.
+
+```
+etgrep -input=./pprof/trace -stacks | less
+```
+
+```
+etgrep -input=./pprof/trace -match='StateTransition "net/http...conn..serve" "ServeHTTP" "**" "sync...Mutex..Lock"' | less
+```
+
 ### `grstates`
 
 This tool creates a visualization of the state machines that a program's goroutines run through in an execution trace.
@@ -68,19 +83,6 @@ It works with the v2 execution trace format, so supports execution traces from G
 
 ```
 grstates -input=./pprof/trace -svg=/tmp/trace.svg
-```
-
-### `etgrep`
-
-This tool gives a text-based peek into the data that make up Go's execution traces.
-Its basic output is similar to that of `go tool trace -d`, but it also allows printing events' associated call stacks, and filtering based on event type and call stack structure.
-
-```
-etgrep -input=./pprof/trace -stacks | less
-```
-
-```
-etgrep -input=./pprof/trace -match='GoBlockSync "net/http...conn..serve" "ServeHTTP" "**" "sync...Mutex..Lock"' | less
 ```
 
 ### `regiongraph`
