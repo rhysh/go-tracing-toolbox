@@ -25,7 +25,7 @@ func hash(str string) string {
 	return "h" + hex.EncodeToString(h[:])
 }
 
-func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
+func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors, why *examples) error {
 	var err error
 	fprintf := func(format string, a ...any) {
 		if err != nil {
@@ -36,34 +36,54 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 
 	stackSet := newStackSet()
 
+	formatShort := func(state stackState) string {
+		return fmt.Sprintf("%s\n%s", state.state, stackSet.formatShort(state.stack))
+	}
+
 	var goids []trace.GoID
 	for goid, _ := range goroutines {
 		goids = append(goids, goid)
 	}
 	sort.Slice(goids, func(i, j int) bool { return goids[i] < goids[j] })
 
-	allStacks := make(map[trace.Stack]int)
-	initStacks := make(map[trace.Stack]int)
-	finalStacks := make(map[trace.Stack]int)
-	stackPairs := make(map[[2]trace.Stack]int)
+	whyStrings := make(map[string]string)
+	whyState := func(ss stackState) {
+		name := formatShort(ss)
+		reason, _, _ := strings.Cut(why.stackState[ss].String(), "\n")
+		whyStrings[name] = reason
+	}
+	whyEdge := func(e edge) {
+		name := fmt.Sprintf("%s -> %s", hash(formatShort(e.from)), hash(formatShort(e.to)))
+		reason, _, _ := strings.Cut(why.edgeTo[e].String(), "\n")
+		whyStrings[name] = reason
+	}
+
+	allStates := make(map[stackState]int)
+	initStates := make(map[stackState]int)
+	finalStates := make(map[stackState]int)
+	statePairs := make(map[[2]stackState]int)
 	for _, goid := range goids {
 		b := goroutines[goid]
 
-		if stk := b.initStack; !(stk == trace.NoStack || stackIsBuggy(stk)) {
-			initStacks[stk]++
-		}
-
-		for pair, count := range b.pairs {
-			allStacks[pair[1]]++
-			if pair[0] == trace.NoStack {
+		for edge, count := range b.edges {
+			if edge.from.stack == trace.NoStack {
 				continue
 			}
-			allStacks[pair[0]]++
-			stackPairs[pair] += count
-		}
+			if edge.from.state == trace.GoNotExist {
+				initStates[edge.to]++
+				continue
+			}
+			if edge.to.state == trace.GoNotExist {
+				finalStates[edge.from]++
+				continue
+			}
+			allStates[edge.to]++
+			allStates[edge.from]++
+			statePairs[[2]stackState{edge.from, edge.to}] += count
 
-		if b.exited && allStacks[b.prevStack] != 0 {
-			finalStacks[b.prevStack]++
+			whyState(edge.to)
+			whyState(edge.from)
+			whyEdge(edge)
 		}
 	}
 
@@ -82,8 +102,8 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 	edges := make(map[[2]string]int)
 
 	fprintf("\t/* goroutine init stacks */\n")
-	for stk, count := range initStacks {
-		str := stackSet.formatShort(stk)
+	for state, count := range initStates {
+		str := formatShort(state)
 		initNodes[str] += count
 	}
 	var initKeys []string
@@ -99,17 +119,18 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 		}
 		return ki < kj
 	})
-	for _, str := range initKeys {
-		count := initNodes[str]
-		fprintf("\t%s [shape=box,label=%s]; /* seen %d times */\n", hash(str), leftEscape(str), count)
+	for _, key := range initKeys {
+		count := initNodes[key]
+		label := fmt.Sprintf("%s\n%s", "New goroutine", key)
+		fprintf("\t%s [label=%s]; /* seen %d times */\n", hash(key), leftEscape(label), count)
 	}
 
 	fprintf("\t/* other known stacks */\n")
-	for stk, count := range allStacks {
-		if _, ok := initStacks[stk]; ok {
+	for state, count := range allStates {
+		if _, ok := initStates[state]; ok {
 			continue
 		}
-		str := stackSet.formatShort(stk)
+		str := formatShort(state)
 		otherNodes[str] += count
 	}
 	var otherKeys []string
@@ -126,14 +147,14 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 		return ki < kj
 	})
 	for _, str := range otherKeys {
-		count := otherNodes[str]
-		fprintf("\t%s [label=%s]; /* seen %d times */\n", hash(str), leftEscape(str), count)
+		tooltip := fmt.Sprintf("example: %s", whyStrings[str])
+		fprintf("\t%s [shape=box,label=%s,tooltip=%q,comment=%q];\n", hash(str), leftEscape(str), tooltip, tooltip)
 	}
 
 	fprintf("\t/* edges */\n")
 	maxCount := 1
-	for pair, count := range stackPairs {
-		edges[[2]string{stackSet.formatShort(pair[0]), stackSet.formatShort(pair[1])}] += count
+	for pair, count := range statePairs {
+		edges[[2]string{formatShort(pair[0]), formatShort(pair[1])}] += count
 		if count > maxCount {
 			maxCount = count
 		}
@@ -155,13 +176,15 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 	})
 	for _, strs := range edgeKeys {
 		count := edges[strs]
-		fprintf("\t%s -> %s [weight=%d,penwidth=%f];\n", hash(strs[0]), hash(strs[1]), count,
-			penwidth(count))
+		name := fmt.Sprintf("%s -> %s", hash(strs[0]), hash(strs[1]))
+		tooltip := fmt.Sprintf("example: %s", whyStrings[name])
+		fprintf("\t%s [weight=%d,penwidth=%f,tooltip=%q,comment=%q];\n", name, count,
+			penwidth(count), tooltip, tooltip)
 	}
 
 	fprintf("\t/* end stacks */\n")
-	for stk, count := range finalStacks {
-		str := stackSet.formatShort(stk)
+	for state, count := range finalStates {
+		str := formatShort(state)
 		finalNodes[str] += count
 	}
 	var finalKeys []string
@@ -181,7 +204,7 @@ func writeDot(w io.Writer, goroutines map[trace.GoID]*behaviors) error {
 		count := finalNodes[str]
 		from := hash(str)
 		to := "EXIT_" + from
-		fprintf("\t%s [shape=box,label=%q]; /* seen %d times */\n", to, "EXIT", count)
+		fprintf("\t%s [label=%q];\n", to, "EXIT")
 		fprintf("\t%s -> %s [weight=%d,penwidth=%f];\n", from, to, count,
 			penwidth(count))
 	}

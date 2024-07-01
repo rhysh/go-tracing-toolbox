@@ -48,6 +48,7 @@ func main() {
 	var (
 		goroutines = make(map[trace.GoID]*behaviors)
 		stackSet   = newStackSet()
+		why        = newExamples()
 	)
 
 	for {
@@ -60,24 +61,29 @@ func main() {
 
 		switch ev.Kind() {
 		case trace.EventStateTransition:
-			if goid := ev.Goroutine(); goid != trace.NoGoroutine && ev.Stack() != trace.NoStack {
-				stk := stackSet.canonical(ev.Stack())
-				b := getBehaviors(goroutines, goid)
-				b.transitionOrigin(ev, stk)
-			}
+			src := ev.Goroutine()
+			dst := trace.NoGoroutine
+
+			srcStk := stackSet.canonical(ev.Stack())
+			dstStk := trace.NoStack
 
 			ext := ev.StateTransition()
 			switch ext.Resource.Kind {
 			case trace.ResourceGoroutine:
-				if goid := ext.Resource.Goroutine(); goid != trace.NoGoroutine {
-					b := getBehaviors(goroutines, goid)
-					if ext.Stack != trace.NoStack {
-						stk := stackSet.canonical(ext.Stack)
-						b.transitionTarget(ev, stk)
+				dst = ext.Resource.Goroutine()
+				dstStk = stackSet.canonical(ext.Stack)
+
+				gstEvent := goroutineStateTransition(ev)
+
+				if src != dst {
+					if src != trace.NoGoroutine {
+						getBehaviors(goroutines, why, src).transitionOrigin(gstEvent, srcStk)
 					}
-					if _, to := ext.Goroutine(); to == trace.GoNotExist {
-						b.exit(ev)
+					if dst != trace.NoGoroutine {
+						getBehaviors(goroutines, why, dst).transitionTarget(gstEvent, dstStk)
 					}
+				} else if src != trace.NoGoroutine {
+					getBehaviors(goroutines, why, src).transitionTarget(gstEvent, srcStk)
 				}
 			}
 		}
@@ -85,7 +91,7 @@ func main() {
 
 	if *dotFile != "" {
 		dotBuf := new(bytes.Buffer)
-		err := writeDot(dotBuf, goroutines)
+		err := writeDot(dotBuf, goroutines, why)
 		if err != nil {
 			log.Fatalf("generate dot file: %v", err)
 		}
@@ -96,7 +102,7 @@ func main() {
 	}
 	if *svgFile != "" {
 		var dotBuf, svgBuf, errBuf bytes.Buffer
-		err := writeDot(&dotBuf, goroutines)
+		err := writeDot(&dotBuf, goroutines, why)
 		if err != nil {
 			log.Fatalf("generate dot file: %v", err)
 		}
@@ -167,93 +173,143 @@ func (ss *stackSet) formatShort(stk trace.Stack) string {
 	return buf.String()
 }
 
-func getBehaviors(goroutines map[trace.GoID]*behaviors, goid trace.GoID) *behaviors {
+func getBehaviors(goroutines map[trace.GoID]*behaviors, why *examples, goid trace.GoID) *behaviors {
 	b, ok := goroutines[goid]
 	if !ok {
 		b = &behaviors{
-			pairs: make(map[[2]trace.Stack]int),
+			why:   why,
+			edges: make(map[edge]int),
 		}
 		goroutines[goid] = b
 	}
 	return b
 }
 
+type stackState struct {
+	stack trace.Stack
+	state trace.GoState
+}
+
+type edge struct {
+	from stackState
+	to   stackState
+	via  [8]trace.GoState
+}
+
 type behaviors struct {
-	pairs map[[2]trace.Stack]int
+	why *examples
 
-	lastEv trace.Event
+	edges map[edge]int
 
-	initStack trace.Stack
-	prevStack trace.Stack
-	exited    bool
+	prevState stackState
+	via       [8]trace.GoState
+	current   trace.GoState
+	preempted bool
 }
 
-func (b *behaviors) exit(ev trace.Event) {
-	b.exited = true
+// transitionOrigin processes a trace.Event that describes this goroutine
+// effecting a StateTransition.
+func (b *behaviors) transitionOrigin(ev goroutineStateTransition, stk trace.Stack) {
+	if b == nil {
+		return
+	}
+
+	if b.current == trace.GoUndetermined {
+		// If we don't yet know this goroutine's state, but it's causing other
+		// goroutines to change states .. then it must be Running.
+		b.current = trace.GoRunning
+	}
+
+	if stk == trace.NoStack {
+		// An interesting stack is the only reason to be here (since in this
+		// context, we have no new state)
+		return
+	}
+
+	b.notice(ev, stk, b.current)
+
+	if stk != trace.NoStack {
+		// These stacks aren't a reliable depiction of the goroutine state machine
+		if !(ev.isAsyncPreemption() || stackIsMalloc(stk) || stackIsBuggy(stk)) {
+			b.prevState = stackState{stack: stk, state: b.current}
+		}
+	}
 }
 
-func (b *behaviors) transitionOrigin(ev trace.Event, stk trace.Stack) {
-	b.notice(ev, stk)
-}
-
-func (b *behaviors) transitionTarget(ev trace.Event, stk trace.Stack) {
-	b.notice(ev, stk)
-	if isGoroutineCreation(ev) {
+// transitionTarget processes a trace.Event that describes a StateTransition
+// affecting this goroutine.
+func (b *behaviors) transitionTarget(ev goroutineStateTransition, stk trace.Stack) {
+	if b == nil {
+		return
+	}
+	from, to := trace.Event(ev).StateTransition().Goroutine()
+	if from == trace.GoNotExist {
 		// Use the canonical version, stk.
-		b.initStack = stk
+		b.prevState = stackState{stack: stk, state: from}
 	}
+
+	b.notice(ev, stk, to)
+	b.current = to
 }
 
-func (b *behaviors) notice(ev trace.Event, stk trace.Stack) {
-	novel := false
-	if ev != b.lastEv {
-		novel = true
-		b.lastEv = ev
+func (b *behaviors) notice(ev goroutineStateTransition, stk trace.Stack, to trace.GoState) {
+	// Ignore (pairs of) preemption events, including Gosched
+	if b.preempted {
+		if to == trace.GoRunning {
+			return
+		}
+		b.preempted = false
+	}
+	if ev.isPreemption() {
+		b.preempted = true
 	}
 
-	if !novel {
+	// These stacks aren't a reliable depiction of the goroutine state machine
+	if ev.isAsyncPreemption() || stackIsMalloc(stk) || stackIsBuggy(stk) {
 		return
 	}
 
-	if isAsyncPreemption(ev) || stackIsMalloc(stk) || stackIsBuggy(stk) {
+	if stk == trace.NoStack && to != trace.GoNotExist {
+		for i := len(b.via) - 1; i > 0; i-- {
+			b.via[i] = b.via[i-1]
+		}
+		b.via[0] = to
 		return
 	}
 
-	b.pairs[[2]trace.Stack{b.prevStack, stk}]++
-	b.prevStack = stk
+	nextState := stackState{
+		stack: stk,
+		state: to,
+	}
+	edge := edge{from: b.prevState, to: nextState, via: b.via}
+	b.edges[edge]++
+	b.why.offerEdgeTo(edge, trace.Event(ev))
+	b.why.offerStackState(nextState, trace.Event(ev))
+	b.prevState = nextState
+	for i := range b.via {
+		b.via[i] = trace.GoUndetermined
+	}
 }
 
-func isGoroutineCreation(ev trace.Event) bool {
-	if ev.Kind() != trace.EventStateTransition {
-		return false
-	}
-	st := ev.StateTransition()
-	if st.Resource.Kind != trace.ResourceGoroutine {
-		return false
-	}
-	if from, _ := st.Goroutine(); from != trace.GoNotExist {
-		return false
-	}
-	return true
+type goroutineStateTransition trace.Event
+
+func (ev goroutineStateTransition) isGoroutineCreation() bool {
+	from, _ := trace.Event(ev).StateTransition().Goroutine()
+	return from == trace.GoNotExist
 }
 
-func isAsyncPreemption(ev trace.Event) bool {
-	if ev.Kind() != trace.EventStateTransition {
-		return false
-	}
-	st := ev.StateTransition()
-	if st.Resource.Kind != trace.ResourceGoroutine {
-		return false
-	}
-	if ev.Goroutine() != st.Resource.Goroutine() {
-		return false
-	}
-	if from, to := st.Goroutine(); !(from == trace.GoRunning && to == trace.GoRunnable) {
+func (ev goroutineStateTransition) isPreemption() bool {
+	from, to := trace.Event(ev).StateTransition().Goroutine()
+	return from == trace.GoRunning && to == trace.GoRunnable
+}
+
+func (ev goroutineStateTransition) isAsyncPreemption() bool {
+	if !ev.isPreemption() {
 		return false
 	}
 
 	hasGosched := false
-	ev.Stack().Frames(func(f trace.StackFrame) bool {
+	trace.Event(ev).Stack().Frames(func(f trace.StackFrame) bool {
 		if f.Func == "runtime.Gosched" {
 			hasGosched = true
 		}
@@ -289,4 +345,32 @@ func stackIsMalloc(stk trace.Stack) bool {
 		return true
 	})
 	return malloc
+}
+
+type examples struct {
+	stackState map[stackState]trace.Event
+	edgeTo     map[edge]trace.Event
+}
+
+func newExamples() *examples {
+	return &examples{
+		stackState: make(map[stackState]trace.Event),
+		edgeTo:     make(map[edge]trace.Event),
+	}
+}
+
+func (e *examples) offerStackState(key stackState, ev trace.Event) {
+	prev, ok := e.stackState[key]
+	if ok && ev.Time().Sub(prev.Time()) > 0 {
+		return
+	}
+	e.stackState[key] = ev
+}
+
+func (e *examples) offerEdgeTo(key edge, ev trace.Event) {
+	prev, ok := e.edgeTo[key]
+	if ok && ev.Time().Sub(prev.Time()) > 0 {
+		return
+	}
+	e.edgeTo[key] = ev
 }
