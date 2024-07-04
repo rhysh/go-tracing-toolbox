@@ -91,7 +91,7 @@ func main() {
 
 	if *dotFile != "" {
 		dotBuf := new(bytes.Buffer)
-		err := writeDot(dotBuf, goroutines, why)
+		err := buildGraph(goroutines, why).writeDot(dotBuf)
 		if err != nil {
 			log.Fatalf("generate dot file: %v", err)
 		}
@@ -102,7 +102,7 @@ func main() {
 	}
 	if *svgFile != "" {
 		var dotBuf, svgBuf, errBuf bytes.Buffer
-		err := writeDot(&dotBuf, goroutines, why)
+		err := buildGraph(goroutines, why).writeDot(&dotBuf)
 		if err != nil {
 			log.Fatalf("generate dot file: %v", err)
 		}
@@ -246,6 +246,7 @@ func (b *behaviors) transitionTarget(ev goroutineStateTransition, stk trace.Stac
 	if from == trace.GoNotExist {
 		// Use the canonical version, stk.
 		b.prevState = stackState{stack: stk, state: from}
+		b.why.offerStackState(b.prevState, trace.Event(ev))
 	}
 
 	b.notice(ev, stk, to)
