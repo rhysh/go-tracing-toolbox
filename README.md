@@ -2,14 +2,6 @@
 
 This project provides commands for bulk data analysis of Go profiles and execution traces.
 
-Note that this does not yet support the v2 execution trace format.
-Note that building most of these tools will first require copying in an execution trace parser.
-(Much of this work predates the existence of importable parsers for Go execution tracers.)
-
-```
-go generate ./internal/_vendor/cp.go
-```
-
 Its contents range from "somewhat polished" to "raw and arcane".
 Here they are in that order.
 
@@ -83,6 +75,18 @@ It works with the v2 execution trace format, so supports execution traces from G
 
 ```
 grstates -input=./pprof/trace -svg=/tmp/trace.svg
+```
+
+## Additional tools, for use only with older "v1" execution trace data
+
+The tools below operate on execution traces from Go 1.21 and older.
+They require making a copy of the parser that ships as part of those older Go distributions.
+(This work predates the existence of importable parsers for Go execution traces.)
+
+Using Go version 1.21 or older, run:
+
+```
+go generate ./internal/_vendor/cp.go
 ```
 
 ### `regiongraph`
