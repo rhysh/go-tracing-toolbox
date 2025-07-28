@@ -145,15 +145,14 @@ func eventGoroutine(ev trace.Event) trace.GoID {
 
 func eventStack(ev trace.Event) []runtime.Frame {
 	var stack []runtime.Frame
-	ev.Stack().Frames(func(f trace.StackFrame) bool {
+	for f := range ev.Stack().Frames() {
 		stack = append(stack, runtime.Frame{
 			Function: f.Func,
 			File:     f.File,
 			Line:     int(f.Line),
 			PC:       uintptr(f.PC),
 		})
-		return true
-	})
+	}
 	return stack
 }
 

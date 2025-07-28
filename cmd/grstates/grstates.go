@@ -146,10 +146,9 @@ func (ss *stackSet) format(stk trace.Stack) string {
 	}
 
 	buf := new(strings.Builder)
-	stk.Frames(func(f trace.StackFrame) bool {
+	for f := range stk.Frames() {
 		fmt.Fprintf(buf, "%s@%#x %s:%d\n", f.Func, f.PC, f.File, f.Line)
-		return true
-	})
+	}
 	str := buf.String()
 	ss.stackStrings[stk] = str
 
@@ -162,10 +161,9 @@ func (ss *stackSet) format(stk trace.Stack) string {
 
 func (ss *stackSet) formatShort(stk trace.Stack) string {
 	var frames []trace.StackFrame
-	stk.Frames(func(f trace.StackFrame) bool {
+	for f := range stk.Frames() {
 		frames = append(frames, f)
-		return true
-	})
+	}
 	buf := new(strings.Builder)
 	for i := len(frames) - 1; i >= 0; i-- {
 		fmt.Fprintf(buf, "%s:%d\n", frames[i].Func, frames[i].Line)
@@ -310,31 +308,29 @@ func (ev goroutineStateTransition) isAsyncPreemption() bool {
 	}
 
 	hasGosched := false
-	trace.Event(ev).Stack().Frames(func(f trace.StackFrame) bool {
+	for f := range trace.Event(ev).Stack().Frames() {
 		if f.Func == "runtime.Gosched" {
 			hasGosched = true
 		}
-		return true
-	})
+	}
 	return !hasGosched
 }
 
 func stackIsBuggy(stk trace.Stack) bool {
 	bug := false
-	stk.Frames(func(f trace.StackFrame) bool {
+	for f := range stk.Frames() {
 		if f.Line == 0 {
 			// There should be a real stack for this event, but it's obscured by
 			// https://go.dev/issue/68090
 			bug = true
 		}
-		return true
-	})
+	}
 	return bug
 }
 
 func stackIsMalloc(stk trace.Stack) bool {
 	malloc := false
-	stk.Frames(func(f trace.StackFrame) bool {
+	for f := range stk.Frames() {
 		if f.Func == "runtime.mallocgc" {
 			// When mallocgc is on the stack, the event likely describes GC
 			// Assist work. In that case, the event doesn't represent an
@@ -343,8 +339,7 @@ func stackIsMalloc(stk trace.Stack) bool {
 			// goroutine's state machine. Ignore it.
 			malloc = true
 		}
-		return true
-	})
+	}
 	return malloc
 }
 
