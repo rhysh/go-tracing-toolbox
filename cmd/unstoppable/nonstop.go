@@ -3,8 +3,10 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"crypto/sha256"
 	"flag"
 	"fmt"
+	"hash"
 	"io"
 	"log"
 	"os"
@@ -27,7 +29,14 @@ func main() {
 		log.Fatalf("os.Open: %v", err)
 	}
 	defer f.Close()
-	reader, err := trace.NewReader(bufio.NewReader(f))
+
+	hash := sha256.New()
+	var rd io.Reader = bufio.NewReader(&hashReader{
+		Hash:   hash,
+		Reader: f,
+	})
+
+	reader, err := trace.NewReader(rd)
 	if err != nil {
 		log.Fatalf("trace.NewReader: %v", err)
 	}
@@ -188,6 +197,7 @@ func main() {
 
 	if *profFile != "" {
 		prof := pb.profile.Compact()
+		prof.SetLabel("trace-sha256", []string{fmt.Sprintf("%02x", hash.Sum(nil))})
 		buf := new(bytes.Buffer)
 		err = prof.Write(buf)
 		if err != nil {
@@ -208,6 +218,22 @@ func isSTW(ev trace.Event) bool {
 		prefix, _, _ := strings.Cut(ev.Range().Name, " ")
 		return prefix == "stop-the-world"
 	}
+}
+
+type hashReader struct {
+	Hash   hash.Hash
+	Reader io.Reader
+}
+
+func (hr *hashReader) Read(p []byte) (int, error) {
+	nr, err := hr.Reader.Read(p)
+	_, hashErr := hr.Hash.Write(p[:nr])
+
+	if err != nil {
+		return nr, err
+	}
+
+	return nr, hashErr
 }
 
 type profileBuilder struct {
